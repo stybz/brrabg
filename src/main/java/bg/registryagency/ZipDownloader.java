@@ -1,14 +1,17 @@
 package bg.registryagency;
 
+import org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry;
+import org.apache.commons.compress.archivers.sevenz.SevenZFile;
 import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
 import org.apache.commons.compress.archivers.zip.ZipArchiveInputStream;
+import org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream;
+import org.apache.commons.compress.compressors.lzma.LZMAUtils;
 import org.apache.commons.compress.utils.IOUtils;
 
 import javax.xml.bind.JAXBContext;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.URL;
+import java.util.Arrays;
 
 /**
  * Uses Apache Commons-Compress to download and
@@ -16,26 +19,14 @@ import java.net.URL;
  */
 public class ZipDownloader {
     public static void main(String[] args) throws Throwable{
-        final String zipPath = "https://opendata.government.bg/static/TR-2008-2016.zip";
+        final String zipPath = "D:/brra2016.zip";
 
-        ZipArchiveInputStream zis = new ZipArchiveInputStream(
-                (new URL(zipPath)).openStream()
-        );
+        LZMACompressorInputStream is = new LZMACompressorInputStream(new FileInputStream(zipPath));
 
-        ZipArchiveEntry entry = null;
-        while ((entry = zis.getNextZipEntry())!= null) {
-            if(!entry.isDirectory()) {
-                File curFile = new File("D:/", entry.getName());
-                File parent = curFile.getParentFile();
-                if(!parent.exists()) {
-                    parent.mkdirs();
-                }
-                OutputStream out = new FileOutputStream(curFile);
-                //UnsupportedZipFeatureException: unsupported feature method 'LZMA' used in entry
-                IOUtils.copy(zis, out);
-                out.close();
-            }
+        byte[] buffer = new byte[1024];
+        int amount = 0;
+        while((amount = is.read(buffer)) != -1) {
+            System.out.println(Arrays.toString(buffer));
         }
-        zis.close();
     }
 }
