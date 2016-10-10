@@ -7,6 +7,10 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Used to get a compressed 1 GB zip file and decompress it
+ * using {@link java.nio}
+ */
 public class XMLParser {
     public static void main(String[] args) {
         final String zipPath = "D:/brra2016.zip";
@@ -17,6 +21,11 @@ public class XMLParser {
         }
     }
 
+    /**
+     * Walks over all files in the archive and unzip them
+     * @param zipFilePath
+     * @throws IOException
+     */
     private static void unzip(String zipFilePath) throws IOException {
         try (FileSystem zipFileSystem = createZipFileSystem(zipFilePath, false)) {
             final Path zipRoot = zipFileSystem.getPath("/");
@@ -32,6 +41,14 @@ public class XMLParser {
         }
     }
 
+    /**
+     * Sets up a FileSystem environment in order to
+     * walk over the files as a file structure.
+     * @param zipFilePath
+     * @param create
+     * @return
+     * @throws IOException
+     */
     private static FileSystem createZipFileSystem(String zipFilePath, boolean create) throws IOException {
         final Path path = Paths.get(zipFilePath);
         final URI uri = URI.create("jar:file:" + path.toUri().getPath());
