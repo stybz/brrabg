@@ -1,0 +1,21 @@
+0000006E LOCAL HEADER #4       04034B50
+00000072 Extract Zip Spec      3F '6.3'
+00000073 Extract OS            00 'MS-DOS'
+00000074 General Purpose Flag  0000
+         [Bit 1]               0 'LZMA EOS Marker Not Present'
+00000076 Compression Method    000E 'LZMA'
+00000078 Last Mod Time         4895BDB4 'Thu Apr 21 23:45:40 2016'
+0000007C CRC                   689D2B4E
+00000080 Compressed Length     000655CD
+00000084 Uncompressed Length   00628719
+00000088 Filename Length       0014
+0000008A Extra Length          0000
+0000008C Filename              '2008/10/20081001.xml'
+000000A0 LZMA Version          0F0E '15.14'
+000000A2 LZMA Properties Size  0005
+000000A4 LZMA Info             5D '(Default)'
+           PosStateBits        2
+           LiteralPosStateBits 0
+           LiteralContextBits  3
+000000A5 LZMA Dictionary Size  01800000
+000000A9 PAYLOAD

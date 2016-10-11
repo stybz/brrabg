@@ -1,0 +1,14 @@
+000000B0 LOCAL HEADER #5       04034B50
+000000B4 Extract Zip Spec      14 '2.0'
+000000B5 Extract OS            00 'MS-DOS'
+000000B6 General Purpose Flag  0000
+         [Bits 1-2]            0 'Normal Compression'
+000000B8 Compression Method    0008 'Deflated'
+000000BA Last Mod Time         4895BDB4 'Thu Apr 21 23:45:40 2016'
+000000BE CRC                   689D2B4E
+000000C2 Compressed Length     000D17E2
+000000C6 Uncompressed Length   00628719
+000000CA Filename Length       001D
+000000CC Extra Length          0000
+000000CE Filename              'brra2016/2008/10/20081001.xml'
+000000EB PAYLOAD
