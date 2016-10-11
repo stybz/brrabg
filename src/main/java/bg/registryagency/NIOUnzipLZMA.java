@@ -23,7 +23,7 @@ import java.util.Map;
  * Used to get a compressed 1 GB zip file and decompress it
  * using {@link java.nio}
  */
-public class XMLParser {
+public class NIOUnzipLZMA {
     public static void main(String[] args) {
         final String zipPath = "D:/brra2016.zip";
         try {
