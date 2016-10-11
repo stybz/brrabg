@@ -5,8 +5,7 @@ import org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream;
 import java.net.URL;
 
 /**
- * Uses Apache Commons-Compress to download and unzip a LZMA compressed file from the internet
- * <p>
+ * Uses Apache Commons-Compress to download and unzip a LZMA compressed file from the internet.
  * Fails because the dictionary is too big (or at least that's what it says)
  */
 public class ApacheCommonsWithTukaani {

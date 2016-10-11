@@ -1,7 +1,6 @@
 package SevenZip.Compression.LZMA;
 
 import SevenZip.Compression.RangeCoder.BitTreeDecoder;
-import SevenZip.Compression.LZMA.Base;
 import SevenZip.Compression.LZ.OutWindow;
 import java.io.IOException;
 
