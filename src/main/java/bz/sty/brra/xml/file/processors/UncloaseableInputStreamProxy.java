@@ -1,4 +1,4 @@
-package bg.registryagency;
+package bz.sty.brra.xml.file.processors;
 
 import java.io.IOException;
 import java.io.InputStream;

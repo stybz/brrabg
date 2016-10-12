@@ -1,6 +1,6 @@
-package bg.registryagency;
+package bz.sty.brra.json.marshallers;
 
-import bg.registryagency.models.BrraCompany;
+import bz.sty.brra.BrraCompanyShort;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.File;
@@ -13,7 +13,7 @@ import java.util.Map;
  * @author Mihail Stoynov
  */
 public class BrraJsonMarshaller {
-    public static void toJSON(Map<String, BrraCompany> map, String name) {
+    public static void toJSON(Map<String, BrraCompanyShort> map, String name) {
         ObjectMapper mapper = new ObjectMapper();
         try {
             mapper.writeValue(new File(name+".json"), map);

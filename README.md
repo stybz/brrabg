@@ -6,3 +6,7 @@
 #STY BRRA
 
 This project aims to produce easy-to-consume data of all Bulgarian companies in a JSON format.
+
+#Developers
+
+We use lombok. Download the lombok plugin for Eclipse/IntelliJ
