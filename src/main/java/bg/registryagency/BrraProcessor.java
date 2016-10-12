@@ -48,9 +48,10 @@ public class BrraProcessor {
             System.out.println("numberOfCompaniesBeforeMerge: " + numberOfCompaniesBeforeMerge + ", timer: " + timer);
 
             Map<String, BrraCompany> allCompaniesFlat = new HashMap<>();
+            System.out.print("Flattening. Processing map: ");
             allCompanies.entrySet().forEach(
                     e -> {
-                        System.out.println("Processing map: " + e.getKey());
+                        System.out.print(e.getKey()+", ");
                         allCompaniesFlat.putAll(e.getValue());
                     });
 
