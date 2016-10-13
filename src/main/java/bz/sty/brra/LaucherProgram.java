@@ -1,5 +1,6 @@
 package bz.sty.brra;
 
+import bz.sty.brra.xml.file.processors.NIOProcessor;
 import bz.sty.brra.xml.file.processors.RemoteZipIOProcessor;
 import bz.sty.brra.xml.file.processors.XmlFileProcessor;
 import com.google.common.base.Stopwatch;
@@ -16,7 +17,9 @@ public class LaucherProgram {
 
         // which processor to use;
         String remoteZipLocation = "https://sty.bz/brra2016.zip";
-        XmlFileProcessor xmlFileProcessor = new RemoteZipIOProcessor(remoteZipLocation, stopwatch);
+        String localZipLocation = "D:/brra2016/";
+//        XmlFileProcessor xmlFileProcessor = new RemoteZipIOProcessor(remoteZipLocation, stopwatch);
+        XmlFileProcessor xmlFileProcessor = new NIOProcessor(localZipLocation, stopwatch);
 
         BrraProcessor brraProcessor = new BrraProcessor(xmlFileProcessor, stopwatch);
         brraProcessor.process();

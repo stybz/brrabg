@@ -36,7 +36,7 @@ public class BrraProcessor {
         int numberOfCompaniesAfterMerge = allCompaniesFlat.size();
         System.out.println("numberOfCompaniesAfterMerge: " + numberOfCompaniesAfterMerge + ", stopwatch: " + stopwatch);
 
-        BrraJsonMarshaller.toJSON(allCompaniesFlat, "brra.json");
+        BrraJsonMarshaller.toJSON(allCompaniesFlat, "brra");
         System.out.println("Finished marshalling to json, stopwatch: " + stopwatch);
     }
 
