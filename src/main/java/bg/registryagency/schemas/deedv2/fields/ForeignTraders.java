@@ -118,17 +118,17 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class ForeignTraders {
 
     @XmlElement(name = "ForeignTraderRegistration")
-    protected ForeignTraders.ForeignTraderRegistration foreignTraderRegistration;
+    protected ForeignTraderRegistration foreignTraderRegistration;
     @XmlElement(name = "ForeignTraderCountry")
-    protected ForeignTraders.ForeignTraderCountry foreignTraderCountry;
+    protected ForeignTraderCountry foreignTraderCountry;
     @XmlElement(name = "ForeignTrader")
-    protected List<ForeignTraders.ForeignTrader> foreignTrader;
+    protected List<ForeignTrader> foreignTrader;
     @XmlElement(name = "ForeignTraderWayOfRepresentation")
-    protected ForeignTraders.ForeignTraderWayOfRepresentation foreignTraderWayOfRepresentation;
+    protected ForeignTraderWayOfRepresentation foreignTraderWayOfRepresentation;
     @XmlElement(name = "AddemptionOfForeignTrader")
-    protected ForeignTraders.AddemptionOfForeignTrader addemptionOfForeignTrader;
+    protected AddemptionOfForeignTrader addemptionOfForeignTrader;
     @XmlElement(name = "ForeignTradeStaticMambers")
-    protected List<ForeignTraders.ForeignTradeStaticMambers> foreignTradeStaticMambers;
+    protected List<ForeignTradeStaticMambers> foreignTradeStaticMambers;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -144,10 +144,10 @@ public class ForeignTraders {
      * 
      * @return
      *     possible object is
-     *     {@link ForeignTraders.ForeignTraderRegistration }
+     *     {@link ForeignTraderRegistration }
      *     
      */
-    public ForeignTraders.ForeignTraderRegistration getForeignTraderRegistration() {
+    public ForeignTraderRegistration getForeignTraderRegistration() {
         return foreignTraderRegistration;
     }
 
@@ -156,10 +156,10 @@ public class ForeignTraders {
      * 
      * @param value
      *     allowed object is
-     *     {@link ForeignTraders.ForeignTraderRegistration }
+     *     {@link ForeignTraderRegistration }
      *     
      */
-    public void setForeignTraderRegistration(ForeignTraders.ForeignTraderRegistration value) {
+    public void setForeignTraderRegistration(ForeignTraderRegistration value) {
         this.foreignTraderRegistration = value;
     }
 
@@ -168,10 +168,10 @@ public class ForeignTraders {
      * 
      * @return
      *     possible object is
-     *     {@link ForeignTraders.ForeignTraderCountry }
+     *     {@link ForeignTraderCountry }
      *     
      */
-    public ForeignTraders.ForeignTraderCountry getForeignTraderCountry() {
+    public ForeignTraderCountry getForeignTraderCountry() {
         return foreignTraderCountry;
     }
 
@@ -180,10 +180,10 @@ public class ForeignTraders {
      * 
      * @param value
      *     allowed object is
-     *     {@link ForeignTraders.ForeignTraderCountry }
+     *     {@link ForeignTraderCountry }
      *     
      */
-    public void setForeignTraderCountry(ForeignTraders.ForeignTraderCountry value) {
+    public void setForeignTraderCountry(ForeignTraderCountry value) {
         this.foreignTraderCountry = value;
     }
 
@@ -205,13 +205,13 @@ public class ForeignTraders {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ForeignTraders.ForeignTrader }
+     * {@link ForeignTrader }
      * 
      * 
      */
-    public List<ForeignTraders.ForeignTrader> getForeignTrader() {
+    public List<ForeignTrader> getForeignTrader() {
         if (foreignTrader == null) {
-            foreignTrader = new ArrayList<ForeignTraders.ForeignTrader>();
+            foreignTrader = new ArrayList<ForeignTrader>();
         }
         return this.foreignTrader;
     }
@@ -221,10 +221,10 @@ public class ForeignTraders {
      * 
      * @return
      *     possible object is
-     *     {@link ForeignTraders.ForeignTraderWayOfRepresentation }
+     *     {@link ForeignTraderWayOfRepresentation }
      *     
      */
-    public ForeignTraders.ForeignTraderWayOfRepresentation getForeignTraderWayOfRepresentation() {
+    public ForeignTraderWayOfRepresentation getForeignTraderWayOfRepresentation() {
         return foreignTraderWayOfRepresentation;
     }
 
@@ -233,10 +233,10 @@ public class ForeignTraders {
      * 
      * @param value
      *     allowed object is
-     *     {@link ForeignTraders.ForeignTraderWayOfRepresentation }
+     *     {@link ForeignTraderWayOfRepresentation }
      *     
      */
-    public void setForeignTraderWayOfRepresentation(ForeignTraders.ForeignTraderWayOfRepresentation value) {
+    public void setForeignTraderWayOfRepresentation(ForeignTraderWayOfRepresentation value) {
         this.foreignTraderWayOfRepresentation = value;
     }
 
@@ -245,10 +245,10 @@ public class ForeignTraders {
      * 
      * @return
      *     possible object is
-     *     {@link ForeignTraders.AddemptionOfForeignTrader }
+     *     {@link AddemptionOfForeignTrader }
      *     
      */
-    public ForeignTraders.AddemptionOfForeignTrader getAddemptionOfForeignTrader() {
+    public AddemptionOfForeignTrader getAddemptionOfForeignTrader() {
         return addemptionOfForeignTrader;
     }
 
@@ -257,10 +257,10 @@ public class ForeignTraders {
      * 
      * @param value
      *     allowed object is
-     *     {@link ForeignTraders.AddemptionOfForeignTrader }
+     *     {@link AddemptionOfForeignTrader }
      *     
      */
-    public void setAddemptionOfForeignTrader(ForeignTraders.AddemptionOfForeignTrader value) {
+    public void setAddemptionOfForeignTrader(AddemptionOfForeignTrader value) {
         this.addemptionOfForeignTrader = value;
     }
 
@@ -282,13 +282,13 @@ public class ForeignTraders {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ForeignTraders.ForeignTradeStaticMambers }
+     * {@link ForeignTradeStaticMambers }
      * 
      * 
      */
-    public List<ForeignTraders.ForeignTradeStaticMambers> getForeignTradeStaticMambers() {
+    public List<ForeignTradeStaticMambers> getForeignTradeStaticMambers() {
         if (foreignTradeStaticMambers == null) {
-            foreignTradeStaticMambers = new ArrayList<ForeignTraders.ForeignTradeStaticMambers>();
+            foreignTradeStaticMambers = new ArrayList<ForeignTradeStaticMambers>();
         }
         return this.foreignTradeStaticMambers;
     }

@@ -16,9 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * From
- *
- * @author Mihail Stoynov
+ * Unmarshalls xml files from opendata.gov.bg for brra.bg
  */
 public class BrraJaxbUnmarshaller {
 

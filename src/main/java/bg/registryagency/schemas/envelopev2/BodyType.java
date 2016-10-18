@@ -55,7 +55,7 @@ import bg.registryagency.schemas.deedv2.DeedType;
 public class BodyType {
 
     @XmlElement(name = "Deeds", required = true)
-    protected BodyType.Deeds deeds;
+    protected Deeds deeds;
     @XmlElement(name = "SearchCriteria")
     protected SearchCriteria searchCriteria;
 
@@ -64,10 +64,10 @@ public class BodyType {
      * 
      * @return
      *     possible object is
-     *     {@link BodyType.Deeds }
+     *     {@link Deeds }
      *     
      */
-    public BodyType.Deeds getDeeds() {
+    public Deeds getDeeds() {
         return deeds;
     }
 
@@ -76,10 +76,10 @@ public class BodyType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BodyType.Deeds }
+     *     {@link Deeds }
      *     
      */
-    public void setDeeds(BodyType.Deeds value) {
+    public void setDeeds(Deeds value) {
         this.deeds = value;
     }
 

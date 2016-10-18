@@ -59,7 +59,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class ReorganizeCoOperatives {
 
     @XmlElement(name = "CoOperative")
-    protected List<ReorganizeCoOperatives.CoOperative> coOperative;
+    protected List<CoOperative> coOperative;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -88,13 +88,13 @@ public class ReorganizeCoOperatives {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ReorganizeCoOperatives.CoOperative }
+     * {@link CoOperative }
      * 
      * 
      */
-    public List<ReorganizeCoOperatives.CoOperative> getCoOperative() {
+    public List<CoOperative> getCoOperative() {
         if (coOperative == null) {
-            coOperative = new ArrayList<ReorganizeCoOperatives.CoOperative>();
+            coOperative = new ArrayList<CoOperative>();
         }
         return this.coOperative;
     }

@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Successors803 {
 
     @XmlElement(name = "Successor803")
-    protected List<Successors803 .Successor803> successor803;
+    protected List<Successor803> successor803;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -93,9 +93,9 @@ public class Successors803 {
      * 
      * 
      */
-    public List<Successors803 .Successor803> getSuccessor803() {
+    public List<Successor803> getSuccessor803() {
         if (successor803 == null) {
-            successor803 = new ArrayList<Successors803 .Successor803>();
+            successor803 = new ArrayList<Successor803>();
         }
         return this.successor803;
     }

@@ -78,7 +78,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Trustees {
 
     @XmlElement(name = "Trustee")
-    protected List<Trustees.Trustee> trustee;
+    protected List<Trustee> trustee;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -107,13 +107,13 @@ public class Trustees {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Trustees.Trustee }
+     * {@link Trustee }
      * 
      * 
      */
-    public List<Trustees.Trustee> getTrustee() {
+    public List<Trustee> getTrustee() {
         if (trustee == null) {
-            trustee = new ArrayList<Trustees.Trustee>();
+            trustee = new ArrayList<Trustee>();
         }
         return this.trustee;
     }
@@ -271,7 +271,7 @@ public class Trustees {
         @XmlElement(name = "Contacts", required = true)
         protected ContactsType contacts;
         @XmlElement(name = "Status", required = true)
-        protected Trustees.Trustee.Status status;
+        protected Status status;
         @XmlElement(name = "ActData", required = true)
         protected ActDataType actData;
         @XmlAttribute(name = "InductionDate")
@@ -364,10 +364,10 @@ public class Trustees {
          * 
          * @return
          *     possible object is
-         *     {@link Trustees.Trustee.Status }
+         *     {@link Status }
          *     
          */
-        public Trustees.Trustee.Status getStatus() {
+        public Status getStatus() {
             return status;
         }
 
@@ -376,10 +376,10 @@ public class Trustees {
          * 
          * @param value
          *     allowed object is
-         *     {@link Trustees.Trustee.Status }
+         *     {@link Status }
          *     
          */
-        public void setStatus(Trustees.Trustee.Status value) {
+        public void setStatus(Status value) {
             this.status = value;
         }
 

@@ -63,7 +63,7 @@ public class ReOpenProceedingsThirdIns {
     @XmlElement(name = "ActData")
     protected ActDataType actData;
     @XmlElement(name = "ReopeningReson")
-    protected ReOpenProceedingsThirdIns.ReopeningReson reopeningReson;
+    protected ReopeningReson reopeningReson;
     @XmlAttribute(name = "RecordID", required = true)
     protected int recordID;
     @XmlAttribute(name = "GroupID", required = true)
@@ -133,10 +133,10 @@ public class ReOpenProceedingsThirdIns {
      * 
      * @return
      *     possible object is
-     *     {@link ReOpenProceedingsThirdIns.ReopeningReson }
+     *     {@link ReopeningReson }
      *     
      */
-    public ReOpenProceedingsThirdIns.ReopeningReson getReopeningReson() {
+    public ReopeningReson getReopeningReson() {
         return reopeningReson;
     }
 
@@ -145,10 +145,10 @@ public class ReOpenProceedingsThirdIns {
      * 
      * @param value
      *     allowed object is
-     *     {@link ReOpenProceedingsThirdIns.ReopeningReson }
+     *     {@link ReopeningReson }
      *     
      */
-    public void setReopeningReson(ReOpenProceedingsThirdIns.ReopeningReson value) {
+    public void setReopeningReson(ReopeningReson value) {
         this.reopeningReson = value;
     }
 

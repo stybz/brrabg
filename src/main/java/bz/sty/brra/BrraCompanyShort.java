@@ -6,16 +6,17 @@ import bz.sty.brra.xml.marshallers.parsers.InvalidDeedException;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  * A Brra company with only {@link #eik}, {@link #name}, {@link #mol}, {@link #address}.
- * <p>
  * These companies are very useful for invoices.
  *
- * A lot of stuff came from Alfa.
+ * Factory method implemented, no public .ctor or setters. Relies heavily on the
+ * "parsers" package, which is mostly code from Alfa.
  */
 public class BrraCompanyShort implements Serializable {
     @Getter @Setter(AccessLevel.PRIVATE)
@@ -26,7 +27,7 @@ public class BrraCompanyShort implements Serializable {
     private String mol;
     @Getter @Setter(AccessLevel.PRIVATE)
     private String address;
-    @Getter @Setter(AccessLevel.PRIVATE)
+    @Getter @Setter(AccessLevel.PRIVATE) @JsonIgnore
     private LocalDate dateLastModified;
 
     private BrraCompanyShort() {}

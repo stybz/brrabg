@@ -64,9 +64,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class PutUnderParticularSupervision {
 
     @XmlElement(name = "Date", required = true)
-    protected PutUnderParticularSupervision.Date date;
+    protected Date date;
     @XmlElement(name = "Conditions", required = true)
-    protected PutUnderParticularSupervision.Conditions conditions;
+    protected Conditions conditions;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -88,10 +88,10 @@ public class PutUnderParticularSupervision {
      * 
      * @return
      *     possible object is
-     *     {@link PutUnderParticularSupervision.Date }
+     *     {@link Date }
      *     
      */
-    public PutUnderParticularSupervision.Date getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -100,10 +100,10 @@ public class PutUnderParticularSupervision {
      * 
      * @param value
      *     allowed object is
-     *     {@link PutUnderParticularSupervision.Date }
+     *     {@link Date }
      *     
      */
-    public void setDate(PutUnderParticularSupervision.Date value) {
+    public void setDate(Date value) {
         this.date = value;
     }
 
@@ -112,10 +112,10 @@ public class PutUnderParticularSupervision {
      * 
      * @return
      *     possible object is
-     *     {@link PutUnderParticularSupervision.Conditions }
+     *     {@link Conditions }
      *     
      */
-    public PutUnderParticularSupervision.Conditions getConditions() {
+    public Conditions getConditions() {
         return conditions;
     }
 
@@ -124,10 +124,10 @@ public class PutUnderParticularSupervision {
      * 
      * @param value
      *     allowed object is
-     *     {@link PutUnderParticularSupervision.Conditions }
+     *     {@link Conditions }
      *     
      */
-    public void setConditions(PutUnderParticularSupervision.Conditions value) {
+    public void setConditions(Conditions value) {
         this.conditions = value;
     }
 

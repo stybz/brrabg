@@ -1,6 +1,7 @@
-package bz.sty.brra.xml.file.processors;
+package bz.sty.brra.xml.file.processors.io;
 
 import bz.sty.brra.BrraCompanyShort;
+import bz.sty.brra.xml.file.processors.XmlFileProcessor;
 import bz.sty.brra.xml.marshallers.BrraJaxbUnmarshaller;
 import com.google.common.base.Stopwatch;
 

@@ -68,7 +68,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class ShareTransfers {
 
     @XmlElement(name = "ShareTransfer")
-    protected List<ShareTransfers.ShareTransfer> shareTransfer;
+    protected List<ShareTransfer> shareTransfer;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -97,13 +97,13 @@ public class ShareTransfers {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ShareTransfers.ShareTransfer }
+     * {@link ShareTransfer }
      * 
      * 
      */
-    public List<ShareTransfers.ShareTransfer> getShareTransfer() {
+    public List<ShareTransfer> getShareTransfer() {
         if (shareTransfer == null) {
-            shareTransfer = new ArrayList<ShareTransfers.ShareTransfer>();
+            shareTransfer = new ArrayList<ShareTransfer>();
         }
         return this.shareTransfer;
     }

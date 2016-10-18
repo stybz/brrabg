@@ -123,15 +123,15 @@ public class ActDataType {
     @XmlElement(name = "ActNumber", required = true)
     protected String actNumber;
     @XmlElement(name = "Type")
-    protected ActDataType.Type type;
+    protected Type type;
     @XmlElement(name = "BankruptcyCourt")
-    protected ActDataType.BankruptcyCourt bankruptcyCourt;
+    protected BankruptcyCourt bankruptcyCourt;
     @XmlElement(name = "Merit")
-    protected ActDataType.Merit merit;
+    protected Merit merit;
     @XmlElement(name = "Execution")
-    protected ActDataType.Execution execution;
+    protected Execution execution;
     @XmlElement(name = "ProclaimMetod")
-    protected ActDataType.ProclaimMetod proclaimMetod;
+    protected ProclaimMetod proclaimMetod;
     @XmlElementRef(name = "ComplaintTerm", namespace = "http://www.registryagency.bg/schemas/deedv2/Fields", type = JAXBElement.class, required = false)
     protected JAXBElement<Object> complaintTerm;
 
@@ -308,10 +308,10 @@ public class ActDataType {
      * 
      * @return
      *     possible object is
-     *     {@link ActDataType.Type }
+     *     {@link Type }
      *     
      */
-    public ActDataType.Type getType() {
+    public Type getType() {
         return type;
     }
 
@@ -320,10 +320,10 @@ public class ActDataType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ActDataType.Type }
+     *     {@link Type }
      *     
      */
-    public void setType(ActDataType.Type value) {
+    public void setType(Type value) {
         this.type = value;
     }
 
@@ -332,10 +332,10 @@ public class ActDataType {
      * 
      * @return
      *     possible object is
-     *     {@link ActDataType.BankruptcyCourt }
+     *     {@link BankruptcyCourt }
      *     
      */
-    public ActDataType.BankruptcyCourt getBankruptcyCourt() {
+    public BankruptcyCourt getBankruptcyCourt() {
         return bankruptcyCourt;
     }
 
@@ -344,10 +344,10 @@ public class ActDataType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ActDataType.BankruptcyCourt }
+     *     {@link BankruptcyCourt }
      *     
      */
-    public void setBankruptcyCourt(ActDataType.BankruptcyCourt value) {
+    public void setBankruptcyCourt(BankruptcyCourt value) {
         this.bankruptcyCourt = value;
     }
 
@@ -356,10 +356,10 @@ public class ActDataType {
      * 
      * @return
      *     possible object is
-     *     {@link ActDataType.Merit }
+     *     {@link Merit }
      *     
      */
-    public ActDataType.Merit getMerit() {
+    public Merit getMerit() {
         return merit;
     }
 
@@ -368,10 +368,10 @@ public class ActDataType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ActDataType.Merit }
+     *     {@link Merit }
      *     
      */
-    public void setMerit(ActDataType.Merit value) {
+    public void setMerit(Merit value) {
         this.merit = value;
     }
 
@@ -380,10 +380,10 @@ public class ActDataType {
      * 
      * @return
      *     possible object is
-     *     {@link ActDataType.Execution }
+     *     {@link Execution }
      *     
      */
-    public ActDataType.Execution getExecution() {
+    public Execution getExecution() {
         return execution;
     }
 
@@ -392,10 +392,10 @@ public class ActDataType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ActDataType.Execution }
+     *     {@link Execution }
      *     
      */
-    public void setExecution(ActDataType.Execution value) {
+    public void setExecution(Execution value) {
         this.execution = value;
     }
 
@@ -404,10 +404,10 @@ public class ActDataType {
      * 
      * @return
      *     possible object is
-     *     {@link ActDataType.ProclaimMetod }
+     *     {@link ProclaimMetod }
      *     
      */
-    public ActDataType.ProclaimMetod getProclaimMetod() {
+    public ProclaimMetod getProclaimMetod() {
         return proclaimMetod;
     }
 
@@ -416,10 +416,10 @@ public class ActDataType {
      * 
      * @param value
      *     allowed object is
-     *     {@link ActDataType.ProclaimMetod }
+     *     {@link ProclaimMetod }
      *     
      */
-    public void setProclaimMetod(ActDataType.ProclaimMetod value) {
+    public void setProclaimMetod(ProclaimMetod value) {
         this.proclaimMetod = value;
     }
 

@@ -61,7 +61,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class NonMonetaryDeposits {
 
     @XmlElement(name = "NonMonetaryDeposit")
-    protected List<NonMonetaryDeposits.NonMonetaryDeposit> nonMonetaryDeposit;
+    protected List<NonMonetaryDeposit> nonMonetaryDeposit;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -90,13 +90,13 @@ public class NonMonetaryDeposits {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link NonMonetaryDeposits.NonMonetaryDeposit }
+     * {@link NonMonetaryDeposit }
      * 
      * 
      */
-    public List<NonMonetaryDeposits.NonMonetaryDeposit> getNonMonetaryDeposit() {
+    public List<NonMonetaryDeposit> getNonMonetaryDeposit() {
         if (nonMonetaryDeposit == null) {
-            nonMonetaryDeposit = new ArrayList<NonMonetaryDeposits.NonMonetaryDeposit>();
+            nonMonetaryDeposit = new ArrayList<NonMonetaryDeposit>();
         }
         return this.nonMonetaryDeposit;
     }

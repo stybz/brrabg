@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class LimitedLiabilityPartners {
 
     @XmlElement(name = "LimitedLiabilityPartner")
-    protected List<LimitedLiabilityPartners.LimitedLiabilityPartner> limitedLiabilityPartner;
+    protected List<LimitedLiabilityPartner> limitedLiabilityPartner;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class LimitedLiabilityPartners {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link LimitedLiabilityPartners.LimitedLiabilityPartner }
+     * {@link LimitedLiabilityPartner }
      * 
      * 
      */
-    public List<LimitedLiabilityPartners.LimitedLiabilityPartner> getLimitedLiabilityPartner() {
+    public List<LimitedLiabilityPartner> getLimitedLiabilityPartner() {
         if (limitedLiabilityPartner == null) {
-            limitedLiabilityPartner = new ArrayList<LimitedLiabilityPartners.LimitedLiabilityPartner>();
+            limitedLiabilityPartner = new ArrayList<LimitedLiabilityPartner>();
         }
         return this.limitedLiabilityPartner;
     }

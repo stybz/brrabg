@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class OffshoreRepresentatives {
 
     @XmlElement(name = "OffshoreRepresentative")
-    protected List<OffshoreRepresentatives.OffshoreRepresentative> offshoreRepresentative;
+    protected List<OffshoreRepresentative> offshoreRepresentative;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class OffshoreRepresentatives {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link OffshoreRepresentatives.OffshoreRepresentative }
+     * {@link OffshoreRepresentative }
      * 
      * 
      */
-    public List<OffshoreRepresentatives.OffshoreRepresentative> getOffshoreRepresentative() {
+    public List<OffshoreRepresentative> getOffshoreRepresentative() {
         if (offshoreRepresentative == null) {
-            offshoreRepresentative = new ArrayList<OffshoreRepresentatives.OffshoreRepresentative>();
+            offshoreRepresentative = new ArrayList<OffshoreRepresentative>();
         }
         return this.offshoreRepresentative;
     }

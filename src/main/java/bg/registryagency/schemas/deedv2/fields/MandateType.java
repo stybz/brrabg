@@ -39,15 +39,15 @@ import javax.xml.bind.annotation.XmlValue;
     "value"
 })
 @XmlSeeAlso({
-    bg.registryagency.schemas.deedv2.fields.ControllingBoard.ControllingBoardMandate.class,
-    bg.registryagency.schemas.deedv2.fields.BoardOfManagers.ManagerMandate.class,
-    bg.registryagency.schemas.deedv2.fields.BoardOfManagers3 .ManagerMandate3 .class,
-    bg.registryagency.schemas.deedv2.fields.BoardOfManagers2 .ManagerMandate2 .class,
-    bg.registryagency.schemas.deedv2.fields.AdministrativeBoard.AdministrativeBoardMandate.class,
-    bg.registryagency.schemas.deedv2.fields.LeadingBoard.LeadingBoardMandate.class,
-    bg.registryagency.schemas.deedv2.fields.SupervisingBoard.SupervisingBoardMandate.class,
-    bg.registryagency.schemas.deedv2.fields.BoardOfDirectors.BoardOfDirectorsMandate.class,
-    bg.registryagency.schemas.deedv2.fields.SupervisingBoard2 .SupervisingBoardMandate2 .class
+    ControllingBoard.ControllingBoardMandate.class,
+    BoardOfManagers.ManagerMandate.class,
+    BoardOfManagers3 .ManagerMandate3 .class,
+    BoardOfManagers2 .ManagerMandate2 .class,
+    AdministrativeBoard.AdministrativeBoardMandate.class,
+    LeadingBoard.LeadingBoardMandate.class,
+    SupervisingBoard.SupervisingBoardMandate.class,
+    BoardOfDirectors.BoardOfDirectorsMandate.class,
+    SupervisingBoard2 .SupervisingBoardMandate2 .class
 })
 public class MandateType {
 

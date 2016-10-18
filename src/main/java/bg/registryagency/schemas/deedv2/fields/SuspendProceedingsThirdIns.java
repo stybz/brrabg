@@ -63,7 +63,7 @@ public class SuspendProceedingsThirdIns {
     @XmlElement(name = "ActData", required = true)
     protected ActDataType actData;
     @XmlElement(name = "SuspendReson", required = true)
-    protected SuspendProceedingsThirdIns.SuspendReson suspendReson;
+    protected SuspendReson suspendReson;
     @XmlAttribute(name = "RecordID", required = true)
     protected int recordID;
     @XmlAttribute(name = "GroupID", required = true)
@@ -133,10 +133,10 @@ public class SuspendProceedingsThirdIns {
      * 
      * @return
      *     possible object is
-     *     {@link SuspendProceedingsThirdIns.SuspendReson }
+     *     {@link SuspendReson }
      *     
      */
-    public SuspendProceedingsThirdIns.SuspendReson getSuspendReson() {
+    public SuspendReson getSuspendReson() {
         return suspendReson;
     }
 
@@ -145,10 +145,10 @@ public class SuspendProceedingsThirdIns {
      * 
      * @param value
      *     allowed object is
-     *     {@link SuspendProceedingsThirdIns.SuspendReson }
+     *     {@link SuspendReson }
      *     
      */
-    public void setSuspendReson(SuspendProceedingsThirdIns.SuspendReson value) {
+    public void setSuspendReson(SuspendReson value) {
         this.suspendReson = value;
     }
 

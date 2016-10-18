@@ -59,7 +59,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Liquidators {
 
     @XmlElement(name = "Liquidator")
-    protected List<Liquidators.Liquidator> liquidator;
+    protected List<Liquidator> liquidator;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -88,13 +88,13 @@ public class Liquidators {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Liquidators.Liquidator }
+     * {@link Liquidator }
      * 
      * 
      */
-    public List<Liquidators.Liquidator> getLiquidator() {
+    public List<Liquidator> getLiquidator() {
         if (liquidator == null) {
-            liquidator = new ArrayList<Liquidators.Liquidator>();
+            liquidator = new ArrayList<Liquidator>();
         }
         return this.liquidator;
     }

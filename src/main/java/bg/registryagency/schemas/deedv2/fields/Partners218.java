@@ -73,9 +73,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Partners218 {
 
     @XmlElement(name = "Partner218Part")
-    protected Partners218 .Partner218Part partner218Part;
+    protected Partner218Part partner218Part;
     @XmlElement(name = "Partner218")
-    protected List<Partners218 .Partner218> partner218;
+    protected List<Partner218> partner218;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -94,7 +94,7 @@ public class Partners218 {
      *     {@link Partners218 .Partner218Part }
      *     
      */
-    public Partners218 .Partner218Part getPartner218Part() {
+    public Partner218Part getPartner218Part() {
         return partner218Part;
     }
 
@@ -106,7 +106,7 @@ public class Partners218 {
      *     {@link Partners218 .Partner218Part }
      *     
      */
-    public void setPartner218Part(Partners218 .Partner218Part value) {
+    public void setPartner218Part(Partner218Part value) {
         this.partner218Part = value;
     }
 
@@ -132,9 +132,9 @@ public class Partners218 {
      * 
      * 
      */
-    public List<Partners218 .Partner218> getPartner218() {
+    public List<Partner218> getPartner218() {
         if (partner218 == null) {
-            partner218 = new ArrayList<Partners218 .Partner218>();
+            partner218 = new ArrayList<Partner218>();
         }
         return this.partner218;
     }

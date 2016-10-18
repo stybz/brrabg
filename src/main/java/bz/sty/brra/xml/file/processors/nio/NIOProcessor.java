@@ -1,6 +1,8 @@
-package bz.sty.brra.xml.file.processors;
+package bz.sty.brra.xml.file.processors.nio;
 
 import bz.sty.brra.BrraCompanyShort;
+import bz.sty.brra.xml.file.processors.XmlFileProcessor;
+import bz.sty.brra.xml.file.processors.io.UncloaseableInputStreamProxy;
 import bz.sty.brra.xml.marshallers.BrraJaxbUnmarshaller;
 import com.google.common.base.Stopwatch;
 
@@ -11,7 +13,6 @@ import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.concurrent.TimeUnit;
 
 public class NIOProcessor implements XmlFileProcessor {
     private String remoteZipLocation;

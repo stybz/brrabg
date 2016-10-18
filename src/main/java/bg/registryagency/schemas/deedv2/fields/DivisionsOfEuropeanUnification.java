@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class DivisionsOfEuropeanUnification {
 
     @XmlElement(name = "DivisionOfEuropeanUnification")
-    protected List<DivisionsOfEuropeanUnification.DivisionOfEuropeanUnification> divisionOfEuropeanUnification;
+    protected List<DivisionOfEuropeanUnification> divisionOfEuropeanUnification;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class DivisionsOfEuropeanUnification {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link DivisionsOfEuropeanUnification.DivisionOfEuropeanUnification }
+     * {@link DivisionOfEuropeanUnification }
      * 
      * 
      */
-    public List<DivisionsOfEuropeanUnification.DivisionOfEuropeanUnification> getDivisionOfEuropeanUnification() {
+    public List<DivisionOfEuropeanUnification> getDivisionOfEuropeanUnification() {
         if (divisionOfEuropeanUnification == null) {
-            divisionOfEuropeanUnification = new ArrayList<DivisionsOfEuropeanUnification.DivisionOfEuropeanUnification>();
+            divisionOfEuropeanUnification = new ArrayList<DivisionOfEuropeanUnification>();
         }
         return this.divisionOfEuropeanUnification;
     }

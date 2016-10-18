@@ -61,7 +61,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class LimitSubjectOfActivity106 {
 
     @XmlElement(name = "LimitInsuaranceActivity106")
-    protected List<LimitSubjectOfActivity106 .LimitInsuaranceActivity106> limitInsuaranceActivity106;
+    protected List<LimitInsuaranceActivity106> limitInsuaranceActivity106;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -94,9 +94,9 @@ public class LimitSubjectOfActivity106 {
      * 
      * 
      */
-    public List<LimitSubjectOfActivity106 .LimitInsuaranceActivity106> getLimitInsuaranceActivity106() {
+    public List<LimitInsuaranceActivity106> getLimitInsuaranceActivity106() {
         if (limitInsuaranceActivity106 == null) {
-            limitInsuaranceActivity106 = new ArrayList<LimitSubjectOfActivity106 .LimitInsuaranceActivity106>();
+            limitInsuaranceActivity106 = new ArrayList<LimitInsuaranceActivity106>();
         }
         return this.limitInsuaranceActivity106;
     }

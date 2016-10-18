@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Suquestrators113 {
 
     @XmlElement(name = "Suquestrator113")
-    protected List<Suquestrators113 .Suquestrator113> suquestrator113;
+    protected List<Suquestrator113> suquestrator113;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -93,9 +93,9 @@ public class Suquestrators113 {
      * 
      * 
      */
-    public List<Suquestrators113 .Suquestrator113> getSuquestrator113() {
+    public List<Suquestrator113> getSuquestrator113() {
         if (suquestrator113 == null) {
-            suquestrator113 = new ArrayList<Suquestrators113 .Suquestrator113>();
+            suquestrator113 = new ArrayList<Suquestrator113>();
         }
         return this.suquestrator113;
     }

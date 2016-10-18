@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class EuropeanHoldingCompanysAsShareholders {
 
     @XmlElement(name = "EuropeanHoldingCompanyAsShareholder")
-    protected List<EuropeanHoldingCompanysAsShareholders.EuropeanHoldingCompanyAsShareholder> europeanHoldingCompanyAsShareholder;
+    protected List<EuropeanHoldingCompanyAsShareholder> europeanHoldingCompanyAsShareholder;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class EuropeanHoldingCompanysAsShareholders {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link EuropeanHoldingCompanysAsShareholders.EuropeanHoldingCompanyAsShareholder }
+     * {@link EuropeanHoldingCompanyAsShareholder }
      * 
      * 
      */
-    public List<EuropeanHoldingCompanysAsShareholders.EuropeanHoldingCompanyAsShareholder> getEuropeanHoldingCompanyAsShareholder() {
+    public List<EuropeanHoldingCompanyAsShareholder> getEuropeanHoldingCompanyAsShareholder() {
         if (europeanHoldingCompanyAsShareholder == null) {
-            europeanHoldingCompanyAsShareholder = new ArrayList<EuropeanHoldingCompanysAsShareholders.EuropeanHoldingCompanyAsShareholder>();
+            europeanHoldingCompanyAsShareholder = new ArrayList<EuropeanHoldingCompanyAsShareholder>();
         }
         return this.europeanHoldingCompanyAsShareholder;
     }

@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class DebtorOverSecureClaims {
 
     @XmlElement(name = "DebtorOverSecureClaim")
-    protected List<DebtorOverSecureClaims.DebtorOverSecureClaim> debtorOverSecureClaim;
+    protected List<DebtorOverSecureClaim> debtorOverSecureClaim;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class DebtorOverSecureClaims {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link DebtorOverSecureClaims.DebtorOverSecureClaim }
+     * {@link DebtorOverSecureClaim }
      * 
      * 
      */
-    public List<DebtorOverSecureClaims.DebtorOverSecureClaim> getDebtorOverSecureClaim() {
+    public List<DebtorOverSecureClaim> getDebtorOverSecureClaim() {
         if (debtorOverSecureClaim == null) {
-            debtorOverSecureClaim = new ArrayList<DebtorOverSecureClaims.DebtorOverSecureClaim>();
+            debtorOverSecureClaim = new ArrayList<DebtorOverSecureClaim>();
         }
         return this.debtorOverSecureClaim;
     }

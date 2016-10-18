@@ -61,7 +61,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Procurators {
 
     @XmlElement(name = "Procurator")
-    protected List<Procurators.Procurator> procurator;
+    protected List<Procurator> procurator;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -90,13 +90,13 @@ public class Procurators {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Procurators.Procurator }
+     * {@link Procurator }
      * 
      * 
      */
-    public List<Procurators.Procurator> getProcurator() {
+    public List<Procurator> getProcurator() {
         if (procurator == null) {
-            procurator = new ArrayList<Procurators.Procurator>();
+            procurator = new ArrayList<Procurator>();
         }
         return this.procurator;
     }

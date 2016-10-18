@@ -117,17 +117,17 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class EuropeanEconomicInterestGrouping {
 
     @XmlElement(name = "ForeignCompanyData")
-    protected EuropeanEconomicInterestGrouping.ForeignCompanyData foreignCompanyData;
+    protected ForeignCompanyData foreignCompanyData;
     @XmlElement(name = "EUIEAddempted")
-    protected EuropeanEconomicInterestGrouping.EUIEAddempted euieAddempted;
+    protected EUIEAddempted euieAddempted;
     @XmlElement(name = "RepresentersWayOfManagement")
-    protected EuropeanEconomicInterestGrouping.RepresentersWayOfManagement representersWayOfManagement;
+    protected RepresentersWayOfManagement representersWayOfManagement;
     @XmlElement(name = "PowerOfLiquidators")
-    protected EuropeanEconomicInterestGrouping.PowerOfLiquidators powerOfLiquidators;
+    protected PowerOfLiquidators powerOfLiquidators;
     @XmlElement(name = "PowerOfTrustees")
-    protected EuropeanEconomicInterestGrouping.PowerOfTrustees powerOfTrustees;
+    protected PowerOfTrustees powerOfTrustees;
     @XmlElement(name = "EuropeanEconomicInterestRepresenter")
-    protected List<EuropeanEconomicInterestGrouping.EuropeanEconomicInterestRepresenter> europeanEconomicInterestRepresenter;
+    protected List<EuropeanEconomicInterestRepresenter> europeanEconomicInterestRepresenter;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -143,10 +143,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @return
      *     possible object is
-     *     {@link EuropeanEconomicInterestGrouping.ForeignCompanyData }
+     *     {@link ForeignCompanyData }
      *     
      */
-    public EuropeanEconomicInterestGrouping.ForeignCompanyData getForeignCompanyData() {
+    public ForeignCompanyData getForeignCompanyData() {
         return foreignCompanyData;
     }
 
@@ -155,10 +155,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @param value
      *     allowed object is
-     *     {@link EuropeanEconomicInterestGrouping.ForeignCompanyData }
+     *     {@link ForeignCompanyData }
      *     
      */
-    public void setForeignCompanyData(EuropeanEconomicInterestGrouping.ForeignCompanyData value) {
+    public void setForeignCompanyData(ForeignCompanyData value) {
         this.foreignCompanyData = value;
     }
 
@@ -167,10 +167,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @return
      *     possible object is
-     *     {@link EuropeanEconomicInterestGrouping.EUIEAddempted }
+     *     {@link EUIEAddempted }
      *     
      */
-    public EuropeanEconomicInterestGrouping.EUIEAddempted getEUIEAddempted() {
+    public EUIEAddempted getEUIEAddempted() {
         return euieAddempted;
     }
 
@@ -179,10 +179,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @param value
      *     allowed object is
-     *     {@link EuropeanEconomicInterestGrouping.EUIEAddempted }
+     *     {@link EUIEAddempted }
      *     
      */
-    public void setEUIEAddempted(EuropeanEconomicInterestGrouping.EUIEAddempted value) {
+    public void setEUIEAddempted(EUIEAddempted value) {
         this.euieAddempted = value;
     }
 
@@ -191,10 +191,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @return
      *     possible object is
-     *     {@link EuropeanEconomicInterestGrouping.RepresentersWayOfManagement }
+     *     {@link RepresentersWayOfManagement }
      *     
      */
-    public EuropeanEconomicInterestGrouping.RepresentersWayOfManagement getRepresentersWayOfManagement() {
+    public RepresentersWayOfManagement getRepresentersWayOfManagement() {
         return representersWayOfManagement;
     }
 
@@ -203,10 +203,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @param value
      *     allowed object is
-     *     {@link EuropeanEconomicInterestGrouping.RepresentersWayOfManagement }
+     *     {@link RepresentersWayOfManagement }
      *     
      */
-    public void setRepresentersWayOfManagement(EuropeanEconomicInterestGrouping.RepresentersWayOfManagement value) {
+    public void setRepresentersWayOfManagement(RepresentersWayOfManagement value) {
         this.representersWayOfManagement = value;
     }
 
@@ -215,10 +215,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @return
      *     possible object is
-     *     {@link EuropeanEconomicInterestGrouping.PowerOfLiquidators }
+     *     {@link PowerOfLiquidators }
      *     
      */
-    public EuropeanEconomicInterestGrouping.PowerOfLiquidators getPowerOfLiquidators() {
+    public PowerOfLiquidators getPowerOfLiquidators() {
         return powerOfLiquidators;
     }
 
@@ -227,10 +227,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @param value
      *     allowed object is
-     *     {@link EuropeanEconomicInterestGrouping.PowerOfLiquidators }
+     *     {@link PowerOfLiquidators }
      *     
      */
-    public void setPowerOfLiquidators(EuropeanEconomicInterestGrouping.PowerOfLiquidators value) {
+    public void setPowerOfLiquidators(PowerOfLiquidators value) {
         this.powerOfLiquidators = value;
     }
 
@@ -239,10 +239,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @return
      *     possible object is
-     *     {@link EuropeanEconomicInterestGrouping.PowerOfTrustees }
+     *     {@link PowerOfTrustees }
      *     
      */
-    public EuropeanEconomicInterestGrouping.PowerOfTrustees getPowerOfTrustees() {
+    public PowerOfTrustees getPowerOfTrustees() {
         return powerOfTrustees;
     }
 
@@ -251,10 +251,10 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * @param value
      *     allowed object is
-     *     {@link EuropeanEconomicInterestGrouping.PowerOfTrustees }
+     *     {@link PowerOfTrustees }
      *     
      */
-    public void setPowerOfTrustees(EuropeanEconomicInterestGrouping.PowerOfTrustees value) {
+    public void setPowerOfTrustees(PowerOfTrustees value) {
         this.powerOfTrustees = value;
     }
 
@@ -276,13 +276,13 @@ public class EuropeanEconomicInterestGrouping {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link EuropeanEconomicInterestGrouping.EuropeanEconomicInterestRepresenter }
+     * {@link EuropeanEconomicInterestRepresenter }
      * 
      * 
      */
-    public List<EuropeanEconomicInterestGrouping.EuropeanEconomicInterestRepresenter> getEuropeanEconomicInterestRepresenter() {
+    public List<EuropeanEconomicInterestRepresenter> getEuropeanEconomicInterestRepresenter() {
         if (europeanEconomicInterestRepresenter == null) {
-            europeanEconomicInterestRepresenter = new ArrayList<EuropeanEconomicInterestGrouping.EuropeanEconomicInterestRepresenter>();
+            europeanEconomicInterestRepresenter = new ArrayList<EuropeanEconomicInterestRepresenter>();
         }
         return this.europeanEconomicInterestRepresenter;
     }

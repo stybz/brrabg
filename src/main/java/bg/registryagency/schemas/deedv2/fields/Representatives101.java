@@ -59,7 +59,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Representatives101 {
 
     @XmlElement(name = "Representative101")
-    protected List<Representatives101 .Representative101> representative101;
+    protected List<Representative101> representative101;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -92,9 +92,9 @@ public class Representatives101 {
      * 
      * 
      */
-    public List<Representatives101 .Representative101> getRepresentative101() {
+    public List<Representative101> getRepresentative101() {
         if (representative101 == null) {
-            representative101 = new ArrayList<Representatives101 .Representative101>();
+            representative101 = new ArrayList<Representative101>();
         }
         return this.representative101;
     }

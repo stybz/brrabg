@@ -1,4 +1,4 @@
-package bz.sty.brra.xml.file.processors;
+package bz.sty.brra.xml.file.processors.io;
 
 import java.io.IOException;
 import java.io.InputStream;

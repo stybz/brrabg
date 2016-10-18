@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class BoardOfManagers2 {
 
     @XmlElement(name = "ManagerMandate2")
-    protected BoardOfManagers2 .ManagerMandate2 managerMandate2;
+    protected ManagerMandate2 managerMandate2;
     @XmlElement(name = "BoardManager2")
-    protected List<BoardOfManagers2 .BoardManager2> boardManager2;
+    protected List<BoardManager2> boardManager2;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,7 +89,7 @@ public class BoardOfManagers2 {
      *     {@link BoardOfManagers2 .ManagerMandate2 }
      *     
      */
-    public BoardOfManagers2 .ManagerMandate2 getManagerMandate2() {
+    public ManagerMandate2 getManagerMandate2() {
         return managerMandate2;
     }
 
@@ -101,7 +101,7 @@ public class BoardOfManagers2 {
      *     {@link BoardOfManagers2 .ManagerMandate2 }
      *     
      */
-    public void setManagerMandate2(BoardOfManagers2 .ManagerMandate2 value) {
+    public void setManagerMandate2(ManagerMandate2 value) {
         this.managerMandate2 = value;
     }
 
@@ -127,9 +127,9 @@ public class BoardOfManagers2 {
      * 
      * 
      */
-    public List<BoardOfManagers2 .BoardManager2> getBoardManager2() {
+    public List<BoardManager2> getBoardManager2() {
         if (boardManager2 == null) {
-            boardManager2 = new ArrayList<BoardOfManagers2 .BoardManager2>();
+            boardManager2 = new ArrayList<BoardManager2>();
         }
         return this.boardManager2;
     }

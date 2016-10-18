@@ -65,7 +65,7 @@ public class UIC {
     @XmlElement(name = "CompanyControl", required = true)
     protected String companyControl;
     @XmlElement(name = "BulstatDeed", required = true)
-    protected UIC.BulstatDeed bulstatDeed;
+    protected BulstatDeed bulstatDeed;
     @XmlAttribute(name = "uic")
     protected String uic;
     @XmlAttribute(name = "IsNew")
@@ -115,10 +115,10 @@ public class UIC {
      * 
      * @return
      *     possible object is
-     *     {@link UIC.BulstatDeed }
+     *     {@link BulstatDeed }
      *     
      */
-    public UIC.BulstatDeed getBulstatDeed() {
+    public BulstatDeed getBulstatDeed() {
         return bulstatDeed;
     }
 
@@ -127,10 +127,10 @@ public class UIC {
      * 
      * @param value
      *     allowed object is
-     *     {@link UIC.BulstatDeed }
+     *     {@link BulstatDeed }
      *     
      */
-    public void setBulstatDeed(UIC.BulstatDeed value) {
+    public void setBulstatDeed(BulstatDeed value) {
         this.bulstatDeed = value;
     }
 

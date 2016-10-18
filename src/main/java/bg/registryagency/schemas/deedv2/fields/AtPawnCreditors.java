@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class AtPawnCreditors {
 
     @XmlElement(name = "AtPawnCreditor")
-    protected List<AtPawnCreditors.AtPawnCreditor> atPawnCreditor;
+    protected List<AtPawnCreditor> atPawnCreditor;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class AtPawnCreditors {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link AtPawnCreditors.AtPawnCreditor }
+     * {@link AtPawnCreditor }
      * 
      * 
      */
-    public List<AtPawnCreditors.AtPawnCreditor> getAtPawnCreditor() {
+    public List<AtPawnCreditor> getAtPawnCreditor() {
         if (atPawnCreditor == null) {
-            atPawnCreditor = new ArrayList<AtPawnCreditors.AtPawnCreditor>();
+            atPawnCreditor = new ArrayList<AtPawnCreditor>();
         }
         return this.atPawnCreditor;
     }

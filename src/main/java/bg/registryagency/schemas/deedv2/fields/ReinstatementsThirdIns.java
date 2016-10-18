@@ -62,7 +62,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class ReinstatementsThirdIns {
 
     @XmlElement(name = "ReinstatementThirdIns")
-    protected List<ReinstatementsThirdIns.ReinstatementThirdIns> reinstatementThirdIns;
+    protected List<ReinstatementThirdIns> reinstatementThirdIns;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -91,13 +91,13 @@ public class ReinstatementsThirdIns {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ReinstatementsThirdIns.ReinstatementThirdIns }
+     * {@link ReinstatementThirdIns }
      * 
      * 
      */
-    public List<ReinstatementsThirdIns.ReinstatementThirdIns> getReinstatementThirdIns() {
+    public List<ReinstatementThirdIns> getReinstatementThirdIns() {
         if (reinstatementThirdIns == null) {
-            reinstatementThirdIns = new ArrayList<ReinstatementsThirdIns.ReinstatementThirdIns>();
+            reinstatementThirdIns = new ArrayList<ReinstatementThirdIns>();
         }
         return this.reinstatementThirdIns;
     }

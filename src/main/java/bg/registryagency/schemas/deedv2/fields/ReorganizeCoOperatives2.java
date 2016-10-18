@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class ReorganizeCoOperatives2 {
 
     @XmlElement(name = "CoOperative2")
-    protected List<ReorganizeCoOperatives2 .CoOperative2> coOperative2;
+    protected List<CoOperative2> coOperative2;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -93,9 +93,9 @@ public class ReorganizeCoOperatives2 {
      * 
      * 
      */
-    public List<ReorganizeCoOperatives2 .CoOperative2> getCoOperative2() {
+    public List<CoOperative2> getCoOperative2() {
         if (coOperative2 == null) {
-            coOperative2 = new ArrayList<ReorganizeCoOperatives2 .CoOperative2>();
+            coOperative2 = new ArrayList<CoOperative2>();
         }
         return this.coOperative2;
     }

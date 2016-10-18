@@ -96,11 +96,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Depozitar {
 
     @XmlElement(name = "DepozitarDistraintDetails")
-    protected Depozitar.DepozitarDistraintDetails depozitarDistraintDetails;
+    protected DepozitarDistraintDetails depozitarDistraintDetails;
     @XmlElement(name = "DepozitarDistraint")
-    protected List<Depozitar.DepozitarDistraint> depozitarDistraint;
+    protected List<DepozitarDistraint> depozitarDistraint;
     @XmlElement(name = "DepozitarReminderDistraint")
-    protected Depozitar.DepozitarReminderDistraint depozitarReminderDistraint;
+    protected DepozitarReminderDistraint depozitarReminderDistraint;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -116,10 +116,10 @@ public class Depozitar {
      * 
      * @return
      *     possible object is
-     *     {@link Depozitar.DepozitarDistraintDetails }
+     *     {@link DepozitarDistraintDetails }
      *     
      */
-    public Depozitar.DepozitarDistraintDetails getDepozitarDistraintDetails() {
+    public DepozitarDistraintDetails getDepozitarDistraintDetails() {
         return depozitarDistraintDetails;
     }
 
@@ -128,10 +128,10 @@ public class Depozitar {
      * 
      * @param value
      *     allowed object is
-     *     {@link Depozitar.DepozitarDistraintDetails }
+     *     {@link DepozitarDistraintDetails }
      *     
      */
-    public void setDepozitarDistraintDetails(Depozitar.DepozitarDistraintDetails value) {
+    public void setDepozitarDistraintDetails(DepozitarDistraintDetails value) {
         this.depozitarDistraintDetails = value;
     }
 
@@ -153,13 +153,13 @@ public class Depozitar {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Depozitar.DepozitarDistraint }
+     * {@link DepozitarDistraint }
      * 
      * 
      */
-    public List<Depozitar.DepozitarDistraint> getDepozitarDistraint() {
+    public List<DepozitarDistraint> getDepozitarDistraint() {
         if (depozitarDistraint == null) {
-            depozitarDistraint = new ArrayList<Depozitar.DepozitarDistraint>();
+            depozitarDistraint = new ArrayList<DepozitarDistraint>();
         }
         return this.depozitarDistraint;
     }
@@ -169,10 +169,10 @@ public class Depozitar {
      * 
      * @return
      *     possible object is
-     *     {@link Depozitar.DepozitarReminderDistraint }
+     *     {@link DepozitarReminderDistraint }
      *     
      */
-    public Depozitar.DepozitarReminderDistraint getDepozitarReminderDistraint() {
+    public DepozitarReminderDistraint getDepozitarReminderDistraint() {
         return depozitarReminderDistraint;
     }
 
@@ -181,10 +181,10 @@ public class Depozitar {
      * 
      * @param value
      *     allowed object is
-     *     {@link Depozitar.DepozitarReminderDistraint }
+     *     {@link DepozitarReminderDistraint }
      *     
      */
-    public void setDepozitarReminderDistraint(Depozitar.DepozitarReminderDistraint value) {
+    public void setDepozitarReminderDistraint(DepozitarReminderDistraint value) {
         this.depozitarReminderDistraint = value;
     }
 

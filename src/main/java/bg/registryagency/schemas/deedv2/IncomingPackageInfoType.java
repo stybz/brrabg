@@ -57,7 +57,7 @@ import javax.xml.bind.annotation.XmlType;
 public class IncomingPackageInfoType {
 
     @XmlElement(name = "Documents")
-    protected IncomingPackageInfoType.Documents documents;
+    protected Documents documents;
     @XmlAttribute(name = "IncomingNumber", required = true)
     protected String incomingNumber;
     @XmlAttribute(name = "IncomingGuid", required = true)
@@ -72,10 +72,10 @@ public class IncomingPackageInfoType {
      * 
      * @return
      *     possible object is
-     *     {@link IncomingPackageInfoType.Documents }
+     *     {@link Documents }
      *     
      */
-    public IncomingPackageInfoType.Documents getDocuments() {
+    public Documents getDocuments() {
         return documents;
     }
 
@@ -84,10 +84,10 @@ public class IncomingPackageInfoType {
      * 
      * @param value
      *     allowed object is
-     *     {@link IncomingPackageInfoType.Documents }
+     *     {@link Documents }
      *     
      */
-    public void setDocuments(IncomingPackageInfoType.Documents value) {
+    public void setDocuments(Documents value) {
         this.documents = value;
     }
 

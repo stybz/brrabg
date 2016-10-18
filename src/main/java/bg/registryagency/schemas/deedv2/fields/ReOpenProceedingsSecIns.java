@@ -63,7 +63,7 @@ public class ReOpenProceedingsSecIns {
     @XmlElement(name = "ActData")
     protected ActDataType actData;
     @XmlElement(name = "ReopeningReson")
-    protected ReOpenProceedingsSecIns.ReopeningReson reopeningReson;
+    protected ReopeningReson reopeningReson;
     @XmlAttribute(name = "RecordID", required = true)
     protected int recordID;
     @XmlAttribute(name = "GroupID", required = true)
@@ -133,10 +133,10 @@ public class ReOpenProceedingsSecIns {
      * 
      * @return
      *     possible object is
-     *     {@link ReOpenProceedingsSecIns.ReopeningReson }
+     *     {@link ReopeningReson }
      *     
      */
-    public ReOpenProceedingsSecIns.ReopeningReson getReopeningReson() {
+    public ReopeningReson getReopeningReson() {
         return reopeningReson;
     }
 
@@ -145,10 +145,10 @@ public class ReOpenProceedingsSecIns {
      * 
      * @param value
      *     allowed object is
-     *     {@link ReOpenProceedingsSecIns.ReopeningReson }
+     *     {@link ReopeningReson }
      *     
      */
-    public void setReopeningReson(ReOpenProceedingsSecIns.ReopeningReson value) {
+    public void setReopeningReson(ReopeningReson value) {
         this.reopeningReson = value;
     }
 

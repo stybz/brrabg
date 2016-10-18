@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class AdministrativeBoard {
 
     @XmlElement(name = "AdministrativeBoardMandate")
-    protected AdministrativeBoard.AdministrativeBoardMandate administrativeBoardMandate;
+    protected AdministrativeBoardMandate administrativeBoardMandate;
     @XmlElement(name = "AdministrativeBody")
-    protected List<AdministrativeBoard.AdministrativeBody> administrativeBody;
+    protected List<AdministrativeBody> administrativeBody;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -86,10 +86,10 @@ public class AdministrativeBoard {
      * 
      * @return
      *     possible object is
-     *     {@link AdministrativeBoard.AdministrativeBoardMandate }
+     *     {@link AdministrativeBoardMandate }
      *     
      */
-    public AdministrativeBoard.AdministrativeBoardMandate getAdministrativeBoardMandate() {
+    public AdministrativeBoardMandate getAdministrativeBoardMandate() {
         return administrativeBoardMandate;
     }
 
@@ -98,10 +98,10 @@ public class AdministrativeBoard {
      * 
      * @param value
      *     allowed object is
-     *     {@link AdministrativeBoard.AdministrativeBoardMandate }
+     *     {@link AdministrativeBoardMandate }
      *     
      */
-    public void setAdministrativeBoardMandate(AdministrativeBoard.AdministrativeBoardMandate value) {
+    public void setAdministrativeBoardMandate(AdministrativeBoardMandate value) {
         this.administrativeBoardMandate = value;
     }
 
@@ -123,13 +123,13 @@ public class AdministrativeBoard {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link AdministrativeBoard.AdministrativeBody }
+     * {@link AdministrativeBody }
      * 
      * 
      */
-    public List<AdministrativeBoard.AdministrativeBody> getAdministrativeBody() {
+    public List<AdministrativeBody> getAdministrativeBody() {
         if (administrativeBody == null) {
-            administrativeBody = new ArrayList<AdministrativeBoard.AdministrativeBody>();
+            administrativeBody = new ArrayList<AdministrativeBody>();
         }
         return this.administrativeBody;
     }

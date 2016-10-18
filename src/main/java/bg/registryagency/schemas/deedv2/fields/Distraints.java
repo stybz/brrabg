@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Distraints {
 
     @XmlElement(name = "Distraint")
-    protected List<Distraints.Distraint> distraint;
+    protected List<Distraint> distraint;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class Distraints {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Distraints.Distraint }
+     * {@link Distraint }
      * 
      * 
      */
-    public List<Distraints.Distraint> getDistraint() {
+    public List<Distraint> getDistraint() {
         if (distraint == null) {
-            distraint = new ArrayList<Distraints.Distraint>();
+            distraint = new ArrayList<Distraint>();
         }
         return this.distraint;
     }

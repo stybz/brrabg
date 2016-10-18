@@ -62,7 +62,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class InsolvenciesOfForeignTrader {
 
     @XmlElement(name = "InsolvencyOfForeignTrader")
-    protected List<InsolvenciesOfForeignTrader.InsolvencyOfForeignTrader> insolvencyOfForeignTrader;
+    protected List<InsolvencyOfForeignTrader> insolvencyOfForeignTrader;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -91,13 +91,13 @@ public class InsolvenciesOfForeignTrader {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link InsolvenciesOfForeignTrader.InsolvencyOfForeignTrader }
+     * {@link InsolvencyOfForeignTrader }
      * 
      * 
      */
-    public List<InsolvenciesOfForeignTrader.InsolvencyOfForeignTrader> getInsolvencyOfForeignTrader() {
+    public List<InsolvencyOfForeignTrader> getInsolvencyOfForeignTrader() {
         if (insolvencyOfForeignTrader == null) {
-            insolvencyOfForeignTrader = new ArrayList<InsolvenciesOfForeignTrader.InsolvencyOfForeignTrader>();
+            insolvencyOfForeignTrader = new ArrayList<InsolvencyOfForeignTrader>();
         }
         return this.insolvencyOfForeignTrader;
     }

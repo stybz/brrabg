@@ -61,7 +61,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class BranchManagers {
 
     @XmlElement(name = "BranchManager")
-    protected List<BranchManagers.BranchManager> branchManager;
+    protected List<BranchManager> branchManager;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -90,13 +90,13 @@ public class BranchManagers {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link BranchManagers.BranchManager }
+     * {@link BranchManager }
      * 
      * 
      */
-    public List<BranchManagers.BranchManager> getBranchManager() {
+    public List<BranchManager> getBranchManager() {
         if (branchManager == null) {
-            branchManager = new ArrayList<BranchManagers.BranchManager>();
+            branchManager = new ArrayList<BranchManager>();
         }
         return this.branchManager;
     }

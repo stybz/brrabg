@@ -81,11 +81,11 @@ public class HeaderType {
     @XmlElement(name = "MessageDetails", required = true)
     protected MessageDetailsType messageDetails;
     @XmlElement(name = "SenderDetails", required = true)
-    protected HeaderType.SenderDetails senderDetails;
+    protected SenderDetails senderDetails;
     @XmlElement(name = "TargetDetails", required = true)
-    protected HeaderType.TargetDetails targetDetails;
+    protected TargetDetails targetDetails;
     @XmlElement(name = "Errors")
-    protected HeaderType.Errors errors;
+    protected Errors errors;
     @XmlElement(name = "Status", required = true)
     @XmlSchemaType(name = "string")
     protected StatusType status;
@@ -119,10 +119,10 @@ public class HeaderType {
      * 
      * @return
      *     possible object is
-     *     {@link HeaderType.SenderDetails }
+     *     {@link SenderDetails }
      *     
      */
-    public HeaderType.SenderDetails getSenderDetails() {
+    public SenderDetails getSenderDetails() {
         return senderDetails;
     }
 
@@ -131,10 +131,10 @@ public class HeaderType {
      * 
      * @param value
      *     allowed object is
-     *     {@link HeaderType.SenderDetails }
+     *     {@link SenderDetails }
      *     
      */
-    public void setSenderDetails(HeaderType.SenderDetails value) {
+    public void setSenderDetails(SenderDetails value) {
         this.senderDetails = value;
     }
 
@@ -143,10 +143,10 @@ public class HeaderType {
      * 
      * @return
      *     possible object is
-     *     {@link HeaderType.TargetDetails }
+     *     {@link TargetDetails }
      *     
      */
-    public HeaderType.TargetDetails getTargetDetails() {
+    public TargetDetails getTargetDetails() {
         return targetDetails;
     }
 
@@ -155,10 +155,10 @@ public class HeaderType {
      * 
      * @param value
      *     allowed object is
-     *     {@link HeaderType.TargetDetails }
+     *     {@link TargetDetails }
      *     
      */
-    public void setTargetDetails(HeaderType.TargetDetails value) {
+    public void setTargetDetails(TargetDetails value) {
         this.targetDetails = value;
     }
 
@@ -167,10 +167,10 @@ public class HeaderType {
      * 
      * @return
      *     possible object is
-     *     {@link HeaderType.Errors }
+     *     {@link Errors }
      *     
      */
-    public HeaderType.Errors getErrors() {
+    public Errors getErrors() {
         return errors;
     }
 
@@ -179,10 +179,10 @@ public class HeaderType {
      * 
      * @param value
      *     allowed object is
-     *     {@link HeaderType.Errors }
+     *     {@link Errors }
      *     
      */
-    public void setErrors(HeaderType.Errors value) {
+    public void setErrors(Errors value) {
         this.errors = value;
     }
 

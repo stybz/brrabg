@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class LimitSubjectOfActivity111 {
 
     @XmlElement(name = "ZPPCKOrganizationLimit")
-    protected List<LimitSubjectOfActivity111 .ZPPCKOrganizationLimit> zppckOrganizationLimit;
+    protected List<ZPPCKOrganizationLimit> zppckOrganizationLimit;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -93,9 +93,9 @@ public class LimitSubjectOfActivity111 {
      * 
      * 
      */
-    public List<LimitSubjectOfActivity111 .ZPPCKOrganizationLimit> getZPPCKOrganizationLimit() {
+    public List<ZPPCKOrganizationLimit> getZPPCKOrganizationLimit() {
         if (zppckOrganizationLimit == null) {
-            zppckOrganizationLimit = new ArrayList<LimitSubjectOfActivity111 .ZPPCKOrganizationLimit>();
+            zppckOrganizationLimit = new ArrayList<ZPPCKOrganizationLimit>();
         }
         return this.zppckOrganizationLimit;
     }

@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class SupervisingBoard {
 
     @XmlElement(name = "SupervisingBoardMandate")
-    protected SupervisingBoard.SupervisingBoardMandate supervisingBoardMandate;
+    protected SupervisingBoardMandate supervisingBoardMandate;
     @XmlElement(name = "Supervisor")
-    protected List<SupervisingBoard.Supervisor> supervisor;
+    protected List<Supervisor> supervisor;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -86,10 +86,10 @@ public class SupervisingBoard {
      * 
      * @return
      *     possible object is
-     *     {@link SupervisingBoard.SupervisingBoardMandate }
+     *     {@link SupervisingBoardMandate }
      *     
      */
-    public SupervisingBoard.SupervisingBoardMandate getSupervisingBoardMandate() {
+    public SupervisingBoardMandate getSupervisingBoardMandate() {
         return supervisingBoardMandate;
     }
 
@@ -98,10 +98,10 @@ public class SupervisingBoard {
      * 
      * @param value
      *     allowed object is
-     *     {@link SupervisingBoard.SupervisingBoardMandate }
+     *     {@link SupervisingBoardMandate }
      *     
      */
-    public void setSupervisingBoardMandate(SupervisingBoard.SupervisingBoardMandate value) {
+    public void setSupervisingBoardMandate(SupervisingBoardMandate value) {
         this.supervisingBoardMandate = value;
     }
 
@@ -123,13 +123,13 @@ public class SupervisingBoard {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link SupervisingBoard.Supervisor }
+     * {@link Supervisor }
      * 
      * 
      */
-    public List<SupervisingBoard.Supervisor> getSupervisor() {
+    public List<Supervisor> getSupervisor() {
         if (supervisor == null) {
-            supervisor = new ArrayList<SupervisingBoard.Supervisor>();
+            supervisor = new ArrayList<Supervisor>();
         }
         return this.supervisor;
     }

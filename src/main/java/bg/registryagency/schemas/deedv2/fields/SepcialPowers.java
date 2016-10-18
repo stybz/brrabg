@@ -61,7 +61,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class SepcialPowers {
 
     @XmlElement(name = "SpecialPower")
-    protected List<SepcialPowers.SpecialPower> specialPower;
+    protected List<SpecialPower> specialPower;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -90,13 +90,13 @@ public class SepcialPowers {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link SepcialPowers.SpecialPower }
+     * {@link SpecialPower }
      * 
      * 
      */
-    public List<SepcialPowers.SpecialPower> getSpecialPower() {
+    public List<SpecialPower> getSpecialPower() {
         if (specialPower == null) {
-            specialPower = new ArrayList<SepcialPowers.SpecialPower>();
+            specialPower = new ArrayList<SpecialPower>();
         }
         return this.specialPower;
     }

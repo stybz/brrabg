@@ -70,9 +70,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Descriptions {
 
     @XmlElement(name = "DescriptionCount")
-    protected Descriptions.DescriptionCount descriptionCount;
+    protected DescriptionCount descriptionCount;
     @XmlElement(name = "Description406")
-    protected List<Descriptions.Description406> description406;
+    protected List<Description406> description406;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -88,10 +88,10 @@ public class Descriptions {
      * 
      * @return
      *     possible object is
-     *     {@link Descriptions.DescriptionCount }
+     *     {@link DescriptionCount }
      *     
      */
-    public Descriptions.DescriptionCount getDescriptionCount() {
+    public DescriptionCount getDescriptionCount() {
         return descriptionCount;
     }
 
@@ -100,10 +100,10 @@ public class Descriptions {
      * 
      * @param value
      *     allowed object is
-     *     {@link Descriptions.DescriptionCount }
+     *     {@link DescriptionCount }
      *     
      */
-    public void setDescriptionCount(Descriptions.DescriptionCount value) {
+    public void setDescriptionCount(DescriptionCount value) {
         this.descriptionCount = value;
     }
 
@@ -125,13 +125,13 @@ public class Descriptions {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Descriptions.Description406 }
+     * {@link Description406 }
      * 
      * 
      */
-    public List<Descriptions.Description406> getDescription406() {
+    public List<Description406> getDescription406() {
         if (description406 == null) {
-            description406 = new ArrayList<Descriptions.Description406>();
+            description406 = new ArrayList<Description406>();
         }
         return this.description406;
     }

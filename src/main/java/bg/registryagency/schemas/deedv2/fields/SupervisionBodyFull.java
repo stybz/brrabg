@@ -65,7 +65,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class SupervisionBodyFull {
 
     @XmlElement(name = "SupervisionBodyMemberFull")
-    protected List<SupervisionBodyFull.SupervisionBodyMemberFull> supervisionBodyMemberFull;
+    protected List<SupervisionBodyMemberFull> supervisionBodyMemberFull;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -94,13 +94,13 @@ public class SupervisionBodyFull {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link SupervisionBodyFull.SupervisionBodyMemberFull }
+     * {@link SupervisionBodyMemberFull }
      * 
      * 
      */
-    public List<SupervisionBodyFull.SupervisionBodyMemberFull> getSupervisionBodyMemberFull() {
+    public List<SupervisionBodyMemberFull> getSupervisionBodyMemberFull() {
         if (supervisionBodyMemberFull == null) {
-            supervisionBodyMemberFull = new ArrayList<SupervisionBodyFull.SupervisionBodyMemberFull>();
+            supervisionBodyMemberFull = new ArrayList<SupervisionBodyMemberFull>();
         }
         return this.supervisionBodyMemberFull;
     }

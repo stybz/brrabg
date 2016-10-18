@@ -78,7 +78,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class TrusteesSecIns {
 
     @XmlElement(name = "TrusteeSecIns")
-    protected List<TrusteesSecIns.TrusteeSecIns> trusteeSecIns;
+    protected List<TrusteeSecIns> trusteeSecIns;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -107,13 +107,13 @@ public class TrusteesSecIns {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link TrusteesSecIns.TrusteeSecIns }
+     * {@link TrusteeSecIns }
      * 
      * 
      */
-    public List<TrusteesSecIns.TrusteeSecIns> getTrusteeSecIns() {
+    public List<TrusteeSecIns> getTrusteeSecIns() {
         if (trusteeSecIns == null) {
-            trusteeSecIns = new ArrayList<TrusteesSecIns.TrusteeSecIns>();
+            trusteeSecIns = new ArrayList<TrusteeSecIns>();
         }
         return this.trusteeSecIns;
     }
@@ -271,7 +271,7 @@ public class TrusteesSecIns {
         @XmlElement(name = "Contacts", required = true)
         protected ContactsType contacts;
         @XmlElement(name = "Status", required = true)
-        protected TrusteesSecIns.TrusteeSecIns.Status status;
+        protected Status status;
         @XmlElement(name = "ActData", required = true)
         protected ActDataType actData;
         @XmlAttribute(name = "InductionDate")
@@ -364,10 +364,10 @@ public class TrusteesSecIns {
          * 
          * @return
          *     possible object is
-         *     {@link TrusteesSecIns.TrusteeSecIns.Status }
+         *     {@link Status }
          *     
          */
-        public TrusteesSecIns.TrusteeSecIns.Status getStatus() {
+        public Status getStatus() {
             return status;
         }
 
@@ -376,10 +376,10 @@ public class TrusteesSecIns {
          * 
          * @param value
          *     allowed object is
-         *     {@link TrusteesSecIns.TrusteeSecIns.Status }
+         *     {@link Status }
          *     
          */
-        public void setStatus(TrusteesSecIns.TrusteeSecIns.Status value) {
+        public void setStatus(Status value) {
             this.status = value;
         }
 

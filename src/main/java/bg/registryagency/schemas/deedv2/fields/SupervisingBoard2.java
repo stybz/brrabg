@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class SupervisingBoard2 {
 
     @XmlElement(name = "SupervisingBoardMandate2")
-    protected SupervisingBoard2 .SupervisingBoardMandate2 supervisingBoardMandate2;
+    protected SupervisingBoardMandate2 supervisingBoardMandate2;
     @XmlElement(name = "Supervisor2")
-    protected List<SupervisingBoard2 .Supervisor2> supervisor2;
+    protected List<Supervisor2> supervisor2;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,7 +89,7 @@ public class SupervisingBoard2 {
      *     {@link SupervisingBoard2 .SupervisingBoardMandate2 }
      *     
      */
-    public SupervisingBoard2 .SupervisingBoardMandate2 getSupervisingBoardMandate2() {
+    public SupervisingBoardMandate2 getSupervisingBoardMandate2() {
         return supervisingBoardMandate2;
     }
 
@@ -101,7 +101,7 @@ public class SupervisingBoard2 {
      *     {@link SupervisingBoard2 .SupervisingBoardMandate2 }
      *     
      */
-    public void setSupervisingBoardMandate2(SupervisingBoard2 .SupervisingBoardMandate2 value) {
+    public void setSupervisingBoardMandate2(SupervisingBoardMandate2 value) {
         this.supervisingBoardMandate2 = value;
     }
 
@@ -127,9 +127,9 @@ public class SupervisingBoard2 {
      * 
      * 
      */
-    public List<SupervisingBoard2 .Supervisor2> getSupervisor2() {
+    public List<Supervisor2> getSupervisor2() {
         if (supervisor2 == null) {
-            supervisor2 = new ArrayList<SupervisingBoard2 .Supervisor2>();
+            supervisor2 = new ArrayList<Supervisor2>();
         }
         return this.supervisor2;
     }

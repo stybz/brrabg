@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class ControllingBoard {
 
     @XmlElement(name = "ControllingBoardMandate")
-    protected ControllingBoard.ControllingBoardMandate controllingBoardMandate;
+    protected ControllingBoardMandate controllingBoardMandate;
     @XmlElement(name = "ControllingBoardPerson")
-    protected List<ControllingBoard.ControllingBoardPerson> controllingBoardPerson;
+    protected List<ControllingBoardPerson> controllingBoardPerson;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -86,10 +86,10 @@ public class ControllingBoard {
      * 
      * @return
      *     possible object is
-     *     {@link ControllingBoard.ControllingBoardMandate }
+     *     {@link ControllingBoardMandate }
      *     
      */
-    public ControllingBoard.ControllingBoardMandate getControllingBoardMandate() {
+    public ControllingBoardMandate getControllingBoardMandate() {
         return controllingBoardMandate;
     }
 
@@ -98,10 +98,10 @@ public class ControllingBoard {
      * 
      * @param value
      *     allowed object is
-     *     {@link ControllingBoard.ControllingBoardMandate }
+     *     {@link ControllingBoardMandate }
      *     
      */
-    public void setControllingBoardMandate(ControllingBoard.ControllingBoardMandate value) {
+    public void setControllingBoardMandate(ControllingBoardMandate value) {
         this.controllingBoardMandate = value;
     }
 
@@ -123,13 +123,13 @@ public class ControllingBoard {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ControllingBoard.ControllingBoardPerson }
+     * {@link ControllingBoardPerson }
      * 
      * 
      */
-    public List<ControllingBoard.ControllingBoardPerson> getControllingBoardPerson() {
+    public List<ControllingBoardPerson> getControllingBoardPerson() {
         if (controllingBoardPerson == null) {
-            controllingBoardPerson = new ArrayList<ControllingBoard.ControllingBoardPerson>();
+            controllingBoardPerson = new ArrayList<ControllingBoardPerson>();
         }
         return this.controllingBoardPerson;
     }

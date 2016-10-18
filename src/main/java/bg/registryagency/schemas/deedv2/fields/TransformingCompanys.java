@@ -59,7 +59,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class TransformingCompanys {
 
     @XmlElement(name = "TransformingCompany")
-    protected List<TransformingCompanys.TransformingCompany> transformingCompany;
+    protected List<TransformingCompany> transformingCompany;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -88,13 +88,13 @@ public class TransformingCompanys {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link TransformingCompanys.TransformingCompany }
+     * {@link TransformingCompany }
      * 
      * 
      */
-    public List<TransformingCompanys.TransformingCompany> getTransformingCompany() {
+    public List<TransformingCompany> getTransformingCompany() {
         if (transformingCompany == null) {
-            transformingCompany = new ArrayList<TransformingCompanys.TransformingCompany>();
+            transformingCompany = new ArrayList<TransformingCompany>();
         }
         return this.transformingCompany;
     }

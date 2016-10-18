@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class ActualOwners {
 
     @XmlElement(name = "ActualOwner")
-    protected List<ActualOwners.ActualOwner> actualOwner;
+    protected List<ActualOwner> actualOwner;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class ActualOwners {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ActualOwners.ActualOwner }
+     * {@link ActualOwner }
      * 
      * 
      */
-    public List<ActualOwners.ActualOwner> getActualOwner() {
+    public List<ActualOwner> getActualOwner() {
         if (actualOwner == null) {
-            actualOwner = new ArrayList<ActualOwners.ActualOwner>();
+            actualOwner = new ArrayList<ActualOwner>();
         }
         return this.actualOwner;
     }

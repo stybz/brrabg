@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class BoardOfDirectors {
 
     @XmlElement(name = "BoardOfDirectorsMandate")
-    protected BoardOfDirectors.BoardOfDirectorsMandate boardOfDirectorsMandate;
+    protected BoardOfDirectorsMandate boardOfDirectorsMandate;
     @XmlElement(name = "Director")
-    protected List<BoardOfDirectors.Director> director;
+    protected List<Director> director;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -86,10 +86,10 @@ public class BoardOfDirectors {
      * 
      * @return
      *     possible object is
-     *     {@link BoardOfDirectors.BoardOfDirectorsMandate }
+     *     {@link BoardOfDirectorsMandate }
      *     
      */
-    public BoardOfDirectors.BoardOfDirectorsMandate getBoardOfDirectorsMandate() {
+    public BoardOfDirectorsMandate getBoardOfDirectorsMandate() {
         return boardOfDirectorsMandate;
     }
 
@@ -98,10 +98,10 @@ public class BoardOfDirectors {
      * 
      * @param value
      *     allowed object is
-     *     {@link BoardOfDirectors.BoardOfDirectorsMandate }
+     *     {@link BoardOfDirectorsMandate }
      *     
      */
-    public void setBoardOfDirectorsMandate(BoardOfDirectors.BoardOfDirectorsMandate value) {
+    public void setBoardOfDirectorsMandate(BoardOfDirectorsMandate value) {
         this.boardOfDirectorsMandate = value;
     }
 
@@ -123,13 +123,13 @@ public class BoardOfDirectors {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link BoardOfDirectors.Director }
+     * {@link Director }
      * 
      * 
      */
-    public List<BoardOfDirectors.Director> getDirector() {
+    public List<Director> getDirector() {
         if (director == null) {
-            director = new ArrayList<BoardOfDirectors.Director>();
+            director = new ArrayList<Director>();
         }
         return this.director;
     }

@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class LeadingBoard {
 
     @XmlElement(name = "LeadingBoardMandate")
-    protected LeadingBoard.LeadingBoardMandate leadingBoardMandate;
+    protected LeadingBoardMandate leadingBoardMandate;
     @XmlElement(name = "Leader")
-    protected List<LeadingBoard.Leader> leader;
+    protected List<Leader> leader;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -86,10 +86,10 @@ public class LeadingBoard {
      * 
      * @return
      *     possible object is
-     *     {@link LeadingBoard.LeadingBoardMandate }
+     *     {@link LeadingBoardMandate }
      *     
      */
-    public LeadingBoard.LeadingBoardMandate getLeadingBoardMandate() {
+    public LeadingBoardMandate getLeadingBoardMandate() {
         return leadingBoardMandate;
     }
 
@@ -98,10 +98,10 @@ public class LeadingBoard {
      * 
      * @param value
      *     allowed object is
-     *     {@link LeadingBoard.LeadingBoardMandate }
+     *     {@link LeadingBoardMandate }
      *     
      */
-    public void setLeadingBoardMandate(LeadingBoard.LeadingBoardMandate value) {
+    public void setLeadingBoardMandate(LeadingBoardMandate value) {
         this.leadingBoardMandate = value;
     }
 
@@ -123,13 +123,13 @@ public class LeadingBoard {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link LeadingBoard.Leader }
+     * {@link Leader }
      * 
      * 
      */
-    public List<LeadingBoard.Leader> getLeader() {
+    public List<Leader> getLeader() {
         if (leader == null) {
-            leader = new ArrayList<LeadingBoard.Leader>();
+            leader = new ArrayList<Leader>();
         }
         return this.leader;
     }

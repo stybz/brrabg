@@ -82,11 +82,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Shares {
 
     @XmlElement(name = "CredentialsForDifferentTypes")
-    protected Shares.CredentialsForDifferentTypes credentialsForDifferentTypes;
+    protected CredentialsForDifferentTypes credentialsForDifferentTypes;
     @XmlElement(name = "SpecialConditionsForTransfer")
-    protected Shares.SpecialConditionsForTransfer specialConditionsForTransfer;
+    protected SpecialConditionsForTransfer specialConditionsForTransfer;
     @XmlElement(name = "Share")
-    protected List<Shares.Share> share;
+    protected List<Share> share;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -102,10 +102,10 @@ public class Shares {
      * 
      * @return
      *     possible object is
-     *     {@link Shares.CredentialsForDifferentTypes }
+     *     {@link CredentialsForDifferentTypes }
      *     
      */
-    public Shares.CredentialsForDifferentTypes getCredentialsForDifferentTypes() {
+    public CredentialsForDifferentTypes getCredentialsForDifferentTypes() {
         return credentialsForDifferentTypes;
     }
 
@@ -114,10 +114,10 @@ public class Shares {
      * 
      * @param value
      *     allowed object is
-     *     {@link Shares.CredentialsForDifferentTypes }
+     *     {@link CredentialsForDifferentTypes }
      *     
      */
-    public void setCredentialsForDifferentTypes(Shares.CredentialsForDifferentTypes value) {
+    public void setCredentialsForDifferentTypes(CredentialsForDifferentTypes value) {
         this.credentialsForDifferentTypes = value;
     }
 
@@ -126,10 +126,10 @@ public class Shares {
      * 
      * @return
      *     possible object is
-     *     {@link Shares.SpecialConditionsForTransfer }
+     *     {@link SpecialConditionsForTransfer }
      *     
      */
-    public Shares.SpecialConditionsForTransfer getSpecialConditionsForTransfer() {
+    public SpecialConditionsForTransfer getSpecialConditionsForTransfer() {
         return specialConditionsForTransfer;
     }
 
@@ -138,10 +138,10 @@ public class Shares {
      * 
      * @param value
      *     allowed object is
-     *     {@link Shares.SpecialConditionsForTransfer }
+     *     {@link SpecialConditionsForTransfer }
      *     
      */
-    public void setSpecialConditionsForTransfer(Shares.SpecialConditionsForTransfer value) {
+    public void setSpecialConditionsForTransfer(SpecialConditionsForTransfer value) {
         this.specialConditionsForTransfer = value;
     }
 
@@ -163,13 +163,13 @@ public class Shares {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Shares.Share }
+     * {@link Share }
      * 
      * 
      */
-    public List<Shares.Share> getShare() {
+    public List<Share> getShare() {
         if (share == null) {
-            share = new ArrayList<Shares.Share>();
+            share = new ArrayList<Share>();
         }
         return this.share;
     }

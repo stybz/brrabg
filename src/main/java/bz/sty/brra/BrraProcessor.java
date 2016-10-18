@@ -15,10 +15,12 @@ public class BrraProcessor {
 
     private XmlFileProcessor xmlFileProcessor;
     private Stopwatch stopwatch;
+    private String jsonFilename;
 
-    public BrraProcessor(XmlFileProcessor xmlFileProcessor, Stopwatch stopwatch) {
+    public BrraProcessor(XmlFileProcessor xmlFileProcessor, Stopwatch stopwatch, String jsonFilename) {
         this.xmlFileProcessor = xmlFileProcessor;
         this.stopwatch = stopwatch;
+        this.jsonFilename = jsonFilename;
     }
 
     public void process() throws Throwable {
@@ -34,9 +36,9 @@ public class BrraProcessor {
         Map<String, BrraCompanyShort> allCompaniesFlat = flatten(allCompanies);
 
         int numberOfCompaniesAfterMerge = allCompaniesFlat.size();
-        System.out.println("numberOfCompaniesAfterMerge: " + numberOfCompaniesAfterMerge + ", stopwatch: " + stopwatch);
+        System.out.println("\n\nnumberOfCompaniesAfterMerge: " + numberOfCompaniesAfterMerge + ", stopwatch: " + stopwatch);
 
-        BrraJsonMarshaller.toJSON(allCompaniesFlat, "brra");
+        BrraJsonMarshaller.toJSON(allCompaniesFlat, jsonFilename);
         System.out.println("Finished marshalling to json, stopwatch: " + stopwatch);
     }
 

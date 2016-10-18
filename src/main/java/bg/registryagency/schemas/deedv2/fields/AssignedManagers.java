@@ -59,7 +59,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class AssignedManagers {
 
     @XmlElement(name = "AssignedManager")
-    protected List<AssignedManagers.AssignedManager> assignedManager;
+    protected List<AssignedManager> assignedManager;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -88,13 +88,13 @@ public class AssignedManagers {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link AssignedManagers.AssignedManager }
+     * {@link AssignedManager }
      * 
      * 
      */
-    public List<AssignedManagers.AssignedManager> getAssignedManager() {
+    public List<AssignedManager> getAssignedManager() {
         if (assignedManager == null) {
-            assignedManager = new ArrayList<AssignedManagers.AssignedManager>();
+            assignedManager = new ArrayList<AssignedManager>();
         }
         return this.assignedManager;
     }

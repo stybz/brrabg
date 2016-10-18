@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class PledgeCreditors {
 
     @XmlElement(name = "PledgeCreditor")
-    protected List<PledgeCreditors.PledgeCreditor> pledgeCreditor;
+    protected List<PledgeCreditor> pledgeCreditor;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class PledgeCreditors {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link PledgeCreditors.PledgeCreditor }
+     * {@link PledgeCreditor }
      * 
      * 
      */
-    public List<PledgeCreditors.PledgeCreditor> getPledgeCreditor() {
+    public List<PledgeCreditor> getPledgeCreditor() {
         if (pledgeCreditor == null) {
-            pledgeCreditor = new ArrayList<PledgeCreditors.PledgeCreditor>();
+            pledgeCreditor = new ArrayList<PledgeCreditor>();
         }
         return this.pledgeCreditor;
     }

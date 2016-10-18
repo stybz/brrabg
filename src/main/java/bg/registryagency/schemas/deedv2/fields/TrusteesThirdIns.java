@@ -78,7 +78,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class TrusteesThirdIns {
 
     @XmlElement(name = "TrusteeThirdIns")
-    protected List<TrusteesThirdIns.TrusteeThirdIns> trusteeThirdIns;
+    protected List<TrusteeThirdIns> trusteeThirdIns;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -107,13 +107,13 @@ public class TrusteesThirdIns {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link TrusteesThirdIns.TrusteeThirdIns }
+     * {@link TrusteeThirdIns }
      * 
      * 
      */
-    public List<TrusteesThirdIns.TrusteeThirdIns> getTrusteeThirdIns() {
+    public List<TrusteeThirdIns> getTrusteeThirdIns() {
         if (trusteeThirdIns == null) {
-            trusteeThirdIns = new ArrayList<TrusteesThirdIns.TrusteeThirdIns>();
+            trusteeThirdIns = new ArrayList<TrusteeThirdIns>();
         }
         return this.trusteeThirdIns;
     }
@@ -271,7 +271,7 @@ public class TrusteesThirdIns {
         @XmlElement(name = "Contacts", required = true)
         protected ContactsType contacts;
         @XmlElement(name = "Status", required = true)
-        protected TrusteesThirdIns.TrusteeThirdIns.Status status;
+        protected Status status;
         @XmlElement(name = "ActData", required = true)
         protected ActDataType actData;
         @XmlAttribute(name = "InductionDate")
@@ -364,10 +364,10 @@ public class TrusteesThirdIns {
          * 
          * @return
          *     possible object is
-         *     {@link TrusteesThirdIns.TrusteeThirdIns.Status }
+         *     {@link Status }
          *     
          */
-        public TrusteesThirdIns.TrusteeThirdIns.Status getStatus() {
+        public Status getStatus() {
             return status;
         }
 
@@ -376,10 +376,10 @@ public class TrusteesThirdIns {
          * 
          * @param value
          *     allowed object is
-         *     {@link TrusteesThirdIns.TrusteeThirdIns.Status }
+         *     {@link Status }
          *     
          */
-        public void setStatus(TrusteesThirdIns.TrusteeThirdIns.Status value) {
+        public void setStatus(Status value) {
             this.status = value;
         }
 

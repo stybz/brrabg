@@ -55,7 +55,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class StatementsAK {
 
     @XmlElement(name = "StatementAK")
-    protected List<StatementsAK.StatementAK> statementAK;
+    protected List<StatementAK> statementAK;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -84,13 +84,13 @@ public class StatementsAK {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link StatementsAK.StatementAK }
+     * {@link StatementAK }
      * 
      * 
      */
-    public List<StatementsAK.StatementAK> getStatementAK() {
+    public List<StatementAK> getStatementAK() {
         if (statementAK == null) {
-            statementAK = new ArrayList<StatementsAK.StatementAK>();
+            statementAK = new ArrayList<StatementAK>();
         }
         return this.statementAK;
     }

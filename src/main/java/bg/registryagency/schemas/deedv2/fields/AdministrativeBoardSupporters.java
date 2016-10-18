@@ -59,7 +59,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class AdministrativeBoardSupporters {
 
     @XmlElement(name = "AdministrativeBoardSupporter")
-    protected List<AdministrativeBoardSupporters.AdministrativeBoardSupporter> administrativeBoardSupporter;
+    protected List<AdministrativeBoardSupporter> administrativeBoardSupporter;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -88,13 +88,13 @@ public class AdministrativeBoardSupporters {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link AdministrativeBoardSupporters.AdministrativeBoardSupporter }
+     * {@link AdministrativeBoardSupporter }
      * 
      * 
      */
-    public List<AdministrativeBoardSupporters.AdministrativeBoardSupporter> getAdministrativeBoardSupporter() {
+    public List<AdministrativeBoardSupporter> getAdministrativeBoardSupporter() {
         if (administrativeBoardSupporter == null) {
-            administrativeBoardSupporter = new ArrayList<AdministrativeBoardSupporters.AdministrativeBoardSupporter>();
+            administrativeBoardSupporter = new ArrayList<AdministrativeBoardSupporter>();
         }
         return this.administrativeBoardSupporter;
     }

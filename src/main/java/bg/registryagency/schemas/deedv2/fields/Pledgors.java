@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Pledgors {
 
     @XmlElement(name = "Pledgor")
-    protected List<Pledgors.Pledgor> pledgor;
+    protected List<Pledgor> pledgor;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -89,13 +89,13 @@ public class Pledgors {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Pledgors.Pledgor }
+     * {@link Pledgor }
      * 
      * 
      */
-    public List<Pledgors.Pledgor> getPledgor() {
+    public List<Pledgor> getPledgor() {
         if (pledgor == null) {
-            pledgor = new ArrayList<Pledgors.Pledgor>();
+            pledgor = new ArrayList<Pledgor>();
         }
         return this.pledgor;
     }

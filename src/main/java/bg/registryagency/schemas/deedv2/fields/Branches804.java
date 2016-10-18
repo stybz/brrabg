@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Branches804 {
 
     @XmlElement(name = "Branch804Subject")
-    protected List<Branches804 .Branch804Subject> branch804Subject;
+    protected List<Branch804Subject> branch804Subject;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -93,9 +93,9 @@ public class Branches804 {
      * 
      * 
      */
-    public List<Branches804 .Branch804Subject> getBranch804Subject() {
+    public List<Branch804Subject> getBranch804Subject() {
         if (branch804Subject == null) {
-            branch804Subject = new ArrayList<Branches804 .Branch804Subject>();
+            branch804Subject = new ArrayList<Branch804Subject>();
         }
         return this.branch804Subject;
     }

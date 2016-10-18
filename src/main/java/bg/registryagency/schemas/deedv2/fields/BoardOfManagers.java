@@ -68,9 +68,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class BoardOfManagers {
 
     @XmlElement(name = "ManagerMandate")
-    protected BoardOfManagers.ManagerMandate managerMandate;
+    protected ManagerMandate managerMandate;
     @XmlElement(name = "BoardManager")
-    protected List<BoardOfManagers.BoardManager> boardManager;
+    protected List<BoardManager> boardManager;
     @XmlAttribute(name = "FieldIdent", required = true)
     protected String fieldIdent;
     @XmlAttribute(name = "FieldOperation", required = true)
@@ -86,10 +86,10 @@ public class BoardOfManagers {
      * 
      * @return
      *     possible object is
-     *     {@link BoardOfManagers.ManagerMandate }
+     *     {@link ManagerMandate }
      *     
      */
-    public BoardOfManagers.ManagerMandate getManagerMandate() {
+    public ManagerMandate getManagerMandate() {
         return managerMandate;
     }
 
@@ -98,10 +98,10 @@ public class BoardOfManagers {
      * 
      * @param value
      *     allowed object is
-     *     {@link BoardOfManagers.ManagerMandate }
+     *     {@link ManagerMandate }
      *     
      */
-    public void setManagerMandate(BoardOfManagers.ManagerMandate value) {
+    public void setManagerMandate(ManagerMandate value) {
         this.managerMandate = value;
     }
 
@@ -123,13 +123,13 @@ public class BoardOfManagers {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link BoardOfManagers.BoardManager }
+     * {@link BoardManager }
      * 
      * 
      */
-    public List<BoardOfManagers.BoardManager> getBoardManager() {
+    public List<BoardManager> getBoardManager() {
         if (boardManager == null) {
-            boardManager = new ArrayList<BoardOfManagers.BoardManager>();
+            boardManager = new ArrayList<BoardManager>();
         }
         return this.boardManager;
     }
