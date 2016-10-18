@@ -11,55 +11,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-compress</artifactId>
-            <version>1.11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.tukaani</groupId>
-            <artifactId>xz</artifactId>
-            <version>1.5</version>
-        </dependency>
-        <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
         </dependency>
-
-
-        <dependency>
-            <groupId>de.schlichtherle.truezip</groupId>
-            <artifactId>truezip-file</artifactId>
-            <version>7.7.10</version>
-        </dependency>
-        <dependency>
-            <groupId>net.java.truevfs</groupId>
-            <artifactId>truevfs-access</artifactId>
-            <version>0.11.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.21</version>
-        </dependency>
-        <dependency>
-            <groupId>net.java.truevfs</groupId>
-            <artifactId>truevfs-driver-zip</artifactId>
-            <version>0.11.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/net.java.truevfs/truevfs-kernel-impl -->
-        <dependency>
-            <groupId>net.java.truevfs</groupId>
-            <artifactId>truevfs-kernel-impl</artifactId>
-            <version>0.11.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/net.java.truevfs/truevfs-profile-default -->
-        <dependency>
-            <groupId>net.java.truevfs</groupId>
-            <artifactId>truevfs-profile-default</artifactId>
-            <version>0.11.1</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -73,9 +28,6 @@
             <artifactId>lombok</artifactId>
             <version>1.16.10</version>
         </dependency>
-
-
-
     </dependencies>
     
     <build>
